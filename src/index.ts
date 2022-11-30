@@ -3,4 +3,4 @@
  * @module pkg-types
  */
 
-export {}
+export * from './types'
