@@ -4,6 +4,7 @@
  */
 
 export type { default as Access } from './access'
+export type { default as Bin } from './bin'
 export type { default as CPU } from './cpu'
 export type { default as DependencyMap } from './dependency-map'
 export type { default as Engine } from './engine'
