@@ -4,10 +4,11 @@
  */
 
 /**
- * Yarn Workspaces configuration.
+ * Workspaces configuration.
  *
  * @see https://classic.yarnpkg.com/docs/workspaces
  * @see https://yarnpkg.com/features/workspaces
+ * @see https://github.com/npm/rfcs/blob/main/implemented/0026-workspaces.md
  */
 interface WorkspacesConfig {
   /**
