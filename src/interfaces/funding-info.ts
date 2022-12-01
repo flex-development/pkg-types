@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - FundingObject
- * @module pkg-types/interfaces/FundingObject
+ * @file Interfaces - FundingInfo
+ * @module pkg-types/interfaces/FundingInfo
  */
 
 import type { FundingType } from '#src/types'
@@ -10,7 +10,7 @@ import type { FundingType } from '#src/types'
  *
  * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#funding
  */
-interface FundingObject {
+interface FundingInfo {
   /**
    * Package funding type.
    */
@@ -22,4 +22,4 @@ interface FundingObject {
   url: string
 }
 
-export type { FundingObject as default }
+export type { FundingInfo as default }
