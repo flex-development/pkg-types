@@ -18,6 +18,12 @@ const config = {
       rules: {
         'sort-keys': 0
       }
+    },
+    {
+      files: ['./src/types/imports.ts'],
+      rules: {
+        '@typescript-eslint/consistent-indexed-object-style': 0
+      }
     }
   ]
 }
