@@ -7,7 +7,7 @@
  * Object containing the URL to the package's issue tracker and/or the email
  * address to which issues should be reported.
  *
- * @see https://docs.npmjs.com/cli/configuring-npm/package-json#bugs
+ * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#bugs
  */
 interface BugsObject {
   /**

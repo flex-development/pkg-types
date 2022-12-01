@@ -8,7 +8,7 @@ import type { EmptyString, LiteralUnion } from '@flex-development/tutils'
 /**
  * Operating system platforms a package runs on.
  *
- * @see https://docs.npmjs.com/cli/configuring-npm/package-json#os
+ * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#os
  * @see https://yarnpkg.com/configuration/manifest#os
  */
 type OS = LiteralUnion<

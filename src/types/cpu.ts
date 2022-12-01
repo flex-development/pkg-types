@@ -8,7 +8,7 @@ import type { EmptyString, LiteralUnion } from '@flex-development/tutils'
 /**
  * CPU architectures a package runs on.
  *
- * @see https://docs.npmjs.com/cli/configuring-npm/package-json#cpu
+ * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#cpu
  * @see https://yarnpkg.com/configuration/manifest
  */
 type CPU = LiteralUnion<

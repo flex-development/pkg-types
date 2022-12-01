@@ -8,7 +8,7 @@ import type { FundingType } from '#src/types'
 /**
  * Object containing information about how to support a package monetarily.
  *
- * @see https://docs.npmjs.com/cli/configuring-npm/package-json#funding
+ * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#funding
  */
 interface FundingObject {
   /**
