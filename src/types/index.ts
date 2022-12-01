@@ -5,6 +5,7 @@
 
 export type { default as Access } from './access'
 export type { default as CPU } from './cpu'
+export type { default as DependencyMap } from './dependency-map'
 export type { default as Engine } from './engine'
 export type { default as ExportCondition } from './export-condition'
 export type { default as FundingType } from './funding-type'
