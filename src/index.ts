@@ -3,4 +3,5 @@
  * @module pkg-types
  */
 
+export * from './interfaces'
 export * from './types'
