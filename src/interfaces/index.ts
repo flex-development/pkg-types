@@ -5,6 +5,7 @@
 
 export type { default as BugsObject } from './bugs-object'
 export type { default as DependencyMeta } from './dependency-meta'
+export type { default as Directories } from './directories'
 export type { default as FundingInfo } from './funding-info'
 export type { default as InstallConfig } from './install-config'
 export type { default as LicenseObject } from './license-object'
