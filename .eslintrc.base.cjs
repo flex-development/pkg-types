@@ -338,7 +338,7 @@ const config = {
     'jsdoc/check-tag-names': [
       1,
       {
-        definedTags: ['next', 'visibleName'],
+        definedTags: ['experimental', 'next', 'packageManager', 'visibleName'],
         jsxTags: jsx
       }
     ],
@@ -1123,6 +1123,9 @@ const config = {
           name: 'namepath-defining',
           required: ['name', 'type']
         },
+        experimental: {
+          name: 'none'
+        },
         extends: {
           name: 'namepath-defining',
           required: ['type']
@@ -1134,6 +1137,10 @@ const config = {
         member: {
           name: 'namepath-defining',
           required: ['name', 'type']
+        },
+        packageManager: {
+          name: 'text',
+          required: ['name']
         },
         param: {
           name: 'namepath-defining',

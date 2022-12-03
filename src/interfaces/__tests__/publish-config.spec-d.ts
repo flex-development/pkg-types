@@ -3,7 +3,7 @@
  * @module pkg-types/interfaces/tests/PublishConfig
  */
 
-import type { Access, Bin, Registry } from '#src/types'
+import type { Access, Bin, Browser, Registry } from '#src/types'
 import type { JsonObject } from '@flex-development/tutils'
 import type TestSubject from '../publish-config'
 
@@ -26,6 +26,12 @@ describe('unit:interfaces/PublishConfig', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('bin')
       .toEqualTypeOf<Bin | undefined>()
+  })
+
+  it('should have property [browser?: Browser]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('browser')
+      .toEqualTypeOf<Browser | undefined>()
   })
 
   it('should have property [executableFiles?: string[]]', () => {

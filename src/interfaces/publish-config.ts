@@ -3,7 +3,7 @@
  * @module pkg-types/interfaces/PublishConfig
  */
 
-import type { Access, Bin, Registry } from '#src/types'
+import type { Access, Bin, Browser, Registry } from '#src/types'
 import type { JsonObject } from '@flex-development/tutils'
 
 /**
@@ -25,12 +25,26 @@ interface PublishConfig extends JsonObject {
    *
    * **Note**: Only modifies the manifest stored in the package tarball, not the
    * real `package.json` file.
+   *
+   * @packageManager yarn
    */
   bin?: Bin
 
   /**
+   * Replacement for top-level `browser` field.
+   *
+   * **Note**: Only modifies the manifest stored in the package tarball, not the
+   * real `package.json` file.
+   *
+   * @packageManager yarn
+   */
+  browser?: Browser
+
+  /**
    * Additional files that must have the executable flag (`+x`) set even if they
    * aren't directly accessible through the `bin` field.
+   *
+   * @packageManager yarn
    */
   executableFiles?: string[]
 
@@ -39,6 +53,8 @@ interface PublishConfig extends JsonObject {
    *
    * **Note**: Only modifies the manifest stored in the package tarball, not the
    * real `package.json` file.
+   *
+   * @packageManager yarn
    */
   main?: string
 
@@ -47,13 +63,13 @@ interface PublishConfig extends JsonObject {
    *
    * **Note**: Only modifies the manifest stored in the package tarball, not the
    * real `package.json` file.
+   *
+   * @packageManager yarn
    */
   module?: string
 
   /**
    * Package registry URL.
-   *
-   * @default 'https://registry.npmjs.org/'
    */
   registry?: Registry
 
