@@ -3,6 +3,8 @@
  * @module pkg-types/interfaces/tests/PublishConfig
  */
 
+import type { Access, Bin, Registry } from '#src/types'
+import type { JsonObject } from '@flex-development/tutils'
 import type TestSubject from '../publish-config'
 
 describe('unit:interfaces/PublishConfig', () => {
@@ -10,49 +12,49 @@ describe('unit:interfaces/PublishConfig', () => {
     assertType<TestSubject>({})
   })
 
-  it('should allow object that only has property "access"', () => {
-    assertType<TestSubject>({ access: 'public' })
-    assertType<TestSubject>({ access: 'restricted' })
+  it('should be json object', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonObject>()
   })
 
-  it('should allow object that only has property "bin"', () => {
-    assertType<TestSubject>({ bin: './cli.mjs' })
-    assertType<TestSubject>({ bin: { mkbuild: './cli.mjs' } })
+  it('should have property [access?: Access]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('access')
+      .toEqualTypeOf<Access | undefined>()
   })
 
-  it('should allow object that only has property "executableFiles"', () => {
-    assertType<TestSubject>({ executableFiles: ['./dist/shim.js'] })
+  it('should have property [bin?: Bin]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('bin')
+      .toEqualTypeOf<Bin | undefined>()
   })
 
-  it('should allow object that only has property "main"', () => {
-    assertType<TestSubject>({ main: './index.cjs' })
+  it('should have property [executableFiles?: string[]]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('executableFiles')
+      .toEqualTypeOf<string[] | undefined>()
   })
 
-  it('should allow object that only has property "module"', () => {
-    assertType<TestSubject>({ module: './index.mjs' })
+  it('should have property [main?: string]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('main')
+      .toEqualTypeOf<string | undefined>()
   })
 
-  it('should allow object that only has property "registry"', () => {
-    assertType<TestSubject>({ registry: 'http://npm.pkg.github.com' })
+  it('should have property [module?: string]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('module')
+      .toEqualTypeOf<string | undefined>()
   })
 
-  it('should allow object that only has property "tag"', () => {
-    assertType<TestSubject>({ tag: 'alpha' })
+  it('should have property [registry?: Registry]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('registry')
+      .toEqualTypeOf<Registry | undefined>()
   })
 
-  it('should allow object with all properties', () => {
-    assertType<Required<TestSubject>>({
-      access: 'public',
-      bin: './cli.mjs',
-      executableFiles: ['./dist/shim.js'],
-      main: './index.cjs',
-      module: './index.mjs',
-      registry: 'http://npm.pkg.github.com',
-      tag: 'alpha'
-    })
-  })
-
-  it('should allow object with unknown key', () => {
-    assertType<TestSubject>({ key: 'value' })
+  it('should have property [tag?: string]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('tag')
+      .toEqualTypeOf<string | undefined>()
   })
 })

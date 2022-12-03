@@ -12,6 +12,6 @@ import type ImportsKey from './imports-key'
  *
  * @see https://nodejs.org/api/packages.html#subpath-imports
  */
-type Imports = { [key: ImportsKey]: ExportConditions | string }
+type Imports = { [key in ImportsKey]: ExportConditions | string }
 
 export type { Imports as default }

@@ -61,7 +61,7 @@
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.3.0",
     "@flex-development/mkbuild": "1.0.0-alpha.9",
-    "@flex-development/tutils": "6.0.0-alpha.3",
+    "@flex-development/tutils": "6.0.0-alpha.7",
     "@graphql-eslint/eslint-plugin": "3.13.1",
     "@types/chai": "4.3.4",
     "@types/conventional-changelog": "3.1.1",
@@ -119,7 +119,7 @@
     "yaml-eslint-parser": "1.1.0"
   },
   "peerDependencies": {
-    "@flex-development/tutils": ">=6.0.0-alpha.3"
+    "@flex-development/tutils": ">=6.0.0-alpha.7"
   },
   "resolutions": {
     "@ardatan/sync-fetch": "larsgw/sync-fetch#head=worker_threads",

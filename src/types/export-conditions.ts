@@ -3,6 +3,7 @@
  * @module tutils/types/ExportConditions
  */
 
+import type { ExactOptionalPropertyTypes } from '@flex-development/tutils'
 import type ExportCondition from './export-condition'
 import type Exports from './exports'
 
@@ -11,6 +12,8 @@ import type Exports from './exports'
  *
  * @see [`ExportCondition`]({@link ./export-condition.ts})
  */
-type ExportConditions = { [condition in ExportCondition]?: Exports }
+type ExportConditions = ExactOptionalPropertyTypes<{
+  [condition in ExportCondition]?: Exports
+}>
 
 export type { ExportConditions as default }

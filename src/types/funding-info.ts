@@ -1,16 +1,16 @@
 /**
- * @file Interfaces - FundingInfo
- * @module pkg-types/interfaces/FundingInfo
+ * @file Type Definitions - FundingInfo
+ * @module pkg-types/types/FundingInfo
  */
 
-import type { FundingType } from '#src/types'
+import type FundingType from './funding-type'
 
 /**
  * Object containing information about how to support a package monetarily.
  *
  * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#funding
  */
-interface FundingInfo {
+type FundingInfo = {
   /**
    * Package funding type.
    */

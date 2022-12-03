@@ -1,12 +1,12 @@
 /**
- * @file Interfaces - Person
- * @module pkg-types/interfaces/Person
+ * @file Type Definitions - Person
+ * @module pkg-types/types/Person
  */
 
 /**
  * Someone who has been involved in creating or maintaining a package.
  */
-interface Person {
+type Person = {
   /**
    * Person's email address.
    */

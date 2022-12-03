@@ -3,7 +3,7 @@
  * @module pkg-types/types/Bin
  */
 
-import type DependencyMap from './dependency-map'
+import type { DependencyMap } from '#src/interfaces'
 
 /**
  * Executable files to install into `PATH`.

@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - PeerDependencyMeta
- * @module pkg-types/interfaces/PeerDependencyMeta
+ * @file Type Definitions - PeerDependencyMeta
+ * @module pkg-types/types/PeerDependencyMeta
  */
 
 /**
@@ -8,7 +8,7 @@
  *
  * @see https://yarnpkg.com/configuration/manifest#peerDependenciesMeta
  */
-interface PeerDependencyMeta {
+type PeerDependencyMeta = {
   /**
    * Have package manager mark dependency as optional.
    *

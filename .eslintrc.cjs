@@ -14,15 +14,15 @@ const config = {
   overrides: [
     ...require('./.eslintrc.base.cjs').overrides,
     {
-      files: ['./src/types/__tests__/types-versions.spec-d.ts'],
+      files: ['src/interfaces/dependency-map.ts', './src/types/imports.ts'],
       rules: {
-        'sort-keys': 0
+        '@typescript-eslint/consistent-indexed-object-style': 0
       }
     },
     {
-      files: ['./src/types/imports.ts'],
+      files: ['./src/types/__tests__/types-versions.spec-d.ts'],
       rules: {
-        '@typescript-eslint/consistent-indexed-object-style': 0
+        'sort-keys': 0
       }
     }
   ]

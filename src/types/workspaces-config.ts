@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - WorkspacesConfig
- * @module pkg-types/interfaces/WorkspacesConfig
+ * @file Type Definitions - WorkspacesConfig
+ * @module pkg-types/types/WorkspacesConfig
  */
 
 /**
@@ -10,7 +10,7 @@
  * @see https://yarnpkg.com/features/workspaces
  * @see https://github.com/npm/rfcs/blob/main/implemented/0026-workspaces.md
  */
-interface WorkspacesConfig {
+type WorkspacesConfig = {
   /**
    * [Glob patterns][1] matching module paths to prevent from being hoisted.
    *

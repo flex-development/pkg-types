@@ -3,26 +3,30 @@
  * @module pkg-types/types/tests/Exports
  */
 
+import type { JsonValue } from '@flex-development/tutils'
+import type ExportConditions from '../export-conditions'
 import type TestSubject from '../exports'
 
 describe('unit:types/Exports', () => {
-  it('should allow ExportConditions', () => {
-    assertType<TestSubject>({ import: './dist/index.mjs' })
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow ExportConditions[]', () => {
-    assertType<TestSubject>([{ import: './dist/index.mjs' }])
+  it('should extract (ExportConditions | string)[]', () => {
+    expectTypeOf<TestSubject>()
+      .extract<(ExportConditions | string)[]>()
+      .toBeArray()
   })
 
-  it('should allow null', () => {
-    assertType<TestSubject>(null)
+  it('should extract ExportConditions', () => {
+    expectTypeOf<TestSubject>().extract<ExportConditions>().not.toBeNever()
   })
 
-  it('should allow string', () => {
-    assertType<TestSubject>('./dist/index.mjs')
+  it('should extract null', () => {
+    expectTypeOf<TestSubject>().extract<null>().toBeNull()
   })
 
-  it('should allow string[]', () => {
-    assertType<TestSubject>(['./dist/index.mjs'])
+  it('should extract string', () => {
+    expectTypeOf<TestSubject>().extract<string>().toBeString()
   })
 })

@@ -3,70 +3,67 @@
  * @module pkg-types/types/tests/OS
  */
 
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../os'
 
 describe('unit:types/OS', () => {
-  it('should allow "aix"', () => {
-    assertType<TestSubject>('aix')
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "darwin"', () => {
-    assertType<TestSubject>('darwin')
+  it('should extract "aix"', () => {
+    expectTypeOf<TestSubject>().extract<'aix'>().toBeString()
   })
 
-  it('should allow "freebsd"', () => {
-    assertType<TestSubject>('freebsd')
+  it('should extract "darwin"', () => {
+    expectTypeOf<TestSubject>().extract<'darwin'>().toBeString()
   })
 
-  it('should allow "linux"', () => {
-    assertType<TestSubject>('linux')
+  it('should extract "freebsd"', () => {
+    expectTypeOf<TestSubject>().extract<'freebsd'>().toBeString()
   })
 
-  it('should allow "openbsd"', () => {
-    assertType<TestSubject>('openbsd')
+  it('should extract "linux"', () => {
+    expectTypeOf<TestSubject>().extract<'linux'>().toBeString()
   })
 
-  it('should allow "sunos"', () => {
-    assertType<TestSubject>('sunos')
+  it('should extract "openbsd"', () => {
+    expectTypeOf<TestSubject>().extract<'openbsd'>().toBeString()
   })
 
-  it('should allow "ppc64"', () => {
-    assertType<TestSubject>('ppc64')
+  it('should extract "sunos"', () => {
+    expectTypeOf<TestSubject>().extract<'sunos'>().toBeString()
   })
 
-  it('should allow "win32"', () => {
-    assertType<TestSubject>('win32')
+  it('should extract "win32"', () => {
+    expectTypeOf<TestSubject>().extract<'win32'>().toBeString()
   })
 
-  it('should allow "!aix"', () => {
-    assertType<TestSubject>('!aix')
+  it('should extract "!aix"', () => {
+    expectTypeOf<TestSubject>().extract<'!aix'>().toBeString()
   })
 
-  it('should allow "!darwin"', () => {
-    assertType<TestSubject>('!darwin')
+  it('should extract "!darwin"', () => {
+    expectTypeOf<TestSubject>().extract<'!darwin'>().toBeString()
   })
 
-  it('should allow "!freebsd"', () => {
-    assertType<TestSubject>('!freebsd')
+  it('should extract "!freebsd"', () => {
+    expectTypeOf<TestSubject>().extract<'!freebsd'>().toBeString()
   })
 
-  it('should allow "!linux"', () => {
-    assertType<TestSubject>('!linux')
+  it('should extract "!linux"', () => {
+    expectTypeOf<TestSubject>().extract<'!linux'>().toBeString()
   })
 
-  it('should allow "!openbsd"', () => {
-    assertType<TestSubject>('!openbsd')
+  it('should extract "!openbsd"', () => {
+    expectTypeOf<TestSubject>().extract<'!openbsd'>().toBeString()
   })
 
-  it('should allow "!sunos"', () => {
-    assertType<TestSubject>('!sunos')
+  it('should extract "!sunos"', () => {
+    expectTypeOf<TestSubject>().extract<'!sunos'>().toBeString()
   })
 
-  it('should allow "!ppc64"', () => {
-    assertType<TestSubject>('!ppc64')
-  })
-
-  it('should allow "!win32"', () => {
-    assertType<TestSubject>('!win32')
+  it('should extract "!win32"', () => {
+    expectTypeOf<TestSubject>().extract<'!win32'>().toBeString()
   })
 })

@@ -3,14 +3,19 @@
  * @module pkg-types/interfaces/Directories
  */
 
+import type { JsonObject } from '@flex-development/tutils'
+
 /**
  * Package structure indicator.
  *
  * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#directories
+ * @see https://classic.yarnpkg.com/en/docs/package-json#toc-directories
  * @see https://wiki.commonjs.org/wiki/Packages/1.0#Package_Directory_Layout
+ *
+ * @extends {JsonObject}
  */
-interface Directories {
-  [type: string]: string
+interface Directories extends JsonObject {
+  [directory: string]: string
 
   /**
    * Relative path to directory containing executable files.

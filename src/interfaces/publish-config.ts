@@ -4,17 +4,17 @@
  */
 
 import type { Access, Bin, Registry } from '#src/types'
-import type { JSONValue } from '@flex-development/tutils'
+import type { JsonObject } from '@flex-development/tutils'
 
 /**
  * Set of configuration values to use when a package is published.
  *
  * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#publishconfig
  * @see https://yarnpkg.com/configuration/manifest#publishConfig
+ *
+ * @extends {JsonObject}
  */
-interface PublishConfig {
-  [key: string]: JSONValue | undefined
-
+interface PublishConfig extends JsonObject {
   /**
    * Package access level.
    */

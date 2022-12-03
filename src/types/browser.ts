@@ -3,7 +3,7 @@
  * @module pkg-types/types/Browser
  */
 
-import type DependencyMap from './dependency-map'
+import type { DependencyMap } from '#src/interfaces'
 
 /**
  * Hint to JavaScript bundlers or component tools when packaging modules for

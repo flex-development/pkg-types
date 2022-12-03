@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - BugsObject
- * @module pkg-types/interfaces/BugsObject
+ * @file Type Definitions - BugsObject
+ * @module pkg-types/types/BugsObject
  */
 
 /**
@@ -9,7 +9,7 @@
  *
  * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#bugs
  */
-interface BugsObject {
+type BugsObject = {
   /**
    * Email address issues should be reported to.
    */

@@ -1,16 +1,16 @@
 /**
- * @file Interfaces - InstallConfig
- * @module pkg-types/interfaces/InstallConfig
+ * @file Type Definitions - InstallConfig
+ * @module pkg-types/types/InstallConfig
  */
 
-import type { HoistingLimits } from '#src/types'
+import type HoistingLimits from './hoisiting-limits'
 
 /**
  * Yarn workspace install configuration.
  *
  * @see https://yarnpkg.com/configuration/manifest#installConfig
  */
-interface InstallConfig {
+type InstallConfig = {
   /**
    * Highest point where packages can be hoisted.
    *

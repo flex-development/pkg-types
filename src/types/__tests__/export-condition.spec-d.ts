@@ -3,54 +3,59 @@
  * @module pkg-types/types/tests/ExportCondition
  */
 
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../export-condition'
 
 describe('unit:types/ExportCondition', () => {
-  it('should allow "browser"', () => {
-    assertType<TestSubject>('browser')
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow "default"', () => {
-    assertType<TestSubject>('default')
+  it('should extract "browser"', () => {
+    expectTypeOf<TestSubject>().extract<'browser'>().toBeString()
   })
 
-  it('should allow "deno"', () => {
-    assertType<TestSubject>('deno')
+  it('should extract "default"', () => {
+    expectTypeOf<TestSubject>().extract<'default'>().toBeString()
   })
 
-  it('should allow "development"', () => {
-    assertType<TestSubject>('development')
+  it('should extract "deno"', () => {
+    expectTypeOf<TestSubject>().extract<'deno'>().toBeString()
   })
 
-  it('should allow "electron"', () => {
-    assertType<TestSubject>('electron')
+  it('should extract "development"', () => {
+    expectTypeOf<TestSubject>().extract<'development'>().toBeString()
   })
 
-  it('should allow "import"', () => {
-    assertType<TestSubject>('import')
+  it('should extract "electron"', () => {
+    expectTypeOf<TestSubject>().extract<'electron'>().toBeString()
   })
 
-  it('should allow "node-addons"', () => {
-    assertType<TestSubject>('node-addons')
+  it('should extract "import"', () => {
+    expectTypeOf<TestSubject>().extract<'import'>().toBeString()
   })
 
-  it('should allow "node"', () => {
-    assertType<TestSubject>('node')
+  it('should extract "node-addons"', () => {
+    expectTypeOf<TestSubject>().extract<'node-addons'>().toBeString()
   })
 
-  it('should allow "production"', () => {
-    assertType<TestSubject>('production')
+  it('should extract "node"', () => {
+    expectTypeOf<TestSubject>().extract<'node'>().toBeString()
   })
 
-  it('should allow "react-native"', () => {
-    assertType<TestSubject>('react-native')
+  it('should extract "production"', () => {
+    expectTypeOf<TestSubject>().extract<'production'>().toBeString()
   })
 
-  it('should allow "require"', () => {
-    assertType<TestSubject>('require')
+  it('should extract "react-native"', () => {
+    expectTypeOf<TestSubject>().extract<'react-native'>().toBeString()
   })
 
-  it('should allow "types"', () => {
-    assertType<TestSubject>('types')
+  it('should extract "require"', () => {
+    expectTypeOf<TestSubject>().extract<'require'>().toBeString()
+  })
+
+  it('should extract "types"', () => {
+    expectTypeOf<TestSubject>().extract<'types'>().toBeString()
   })
 })

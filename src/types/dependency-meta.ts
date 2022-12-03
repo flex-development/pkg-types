@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - DependencyMeta
- * @module pkg-types/interfaces/DependencyMeta
+ * @file Type Definitions - DependencyMeta
+ * @module pkg-types/types/DependencyMeta
  */
 
 /**
@@ -8,7 +8,7 @@
  *
  * @see https://yarnpkg.com/configuration/manifest#dependenciesMeta
  */
-interface DependencyMeta {
+type DependencyMeta = {
   /**
    * Skip package build.
    *

@@ -3,21 +3,22 @@
  * @module pkg-types/types/tests/Browser
  */
 
+import type { DependencyMap } from '#src/interfaces'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../browser'
 
 describe('unit:types/Browser', () => {
-  it('should allow dependency map', () => {
-    assertType<TestSubject>({
-      fs: false,
-      path: './dist/browser-shims/path.mjs'
-    })
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow empty object', () => {
-    assertType<TestSubject>({})
+  it('should extract DependencyMap<string | false>', () => {
+    expectTypeOf<TestSubject>()
+      .extract<DependencyMap<string | false>>()
+      .not.toBeNever()
   })
 
-  it('should allow path to file', () => {
-    assertType<TestSubject>('./dist/browser.mjs')
+  it('should extract string', () => {
+    expectTypeOf<TestSubject>().extract<string>().toBeString()
   })
 })

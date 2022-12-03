@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - LicenseObject
- * @module pkg-types/interfaces/LicenseObject
+ * @file Type Definitions - LicenseObject
+ * @module pkg-types/types/LicenseObject
  */
 
 /**
@@ -8,9 +8,11 @@
  *
  * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#license
  */
-interface LicenseObject {
+type LicenseObject = {
   /**
-   * License type.
+   * [SPDX identifier][1].
+   *
+   * [1]: https://spdx.org/licenses/
    */
   type?: string
 

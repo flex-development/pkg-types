@@ -1,6 +1,6 @@
 /**
- * @file Interfaces - Repository
- * @module pkg-types/interfaces/Repository
+ * @file Type Definitions - Repository
+ * @module pkg-types/types/Repository
  */
 
 import type { LiteralUnion } from '@flex-development/tutils'
@@ -10,7 +10,7 @@ import type { LiteralUnion } from '@flex-development/tutils'
  *
  * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#repository
  */
-interface Repository {
+type Repository = {
   /**
    * Relative path to `package.json` if placed in non-root directory.
    *

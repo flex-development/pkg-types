@@ -3,18 +3,20 @@
  * @module pkg-types/types/tests/Bin
  */
 
+import type { DependencyMap } from '#src/interfaces'
+import type { JsonValue } from '@flex-development/tutils'
 import type TestSubject from '../bin'
 
-describe('unit:types/BinMap', () => {
-  it('should allow empty object', () => {
-    assertType<TestSubject>({})
+describe('unit:types/Bin', () => {
+  it('should be json value', () => {
+    expectTypeOf<TestSubject>().toMatchTypeOf<JsonValue>()
   })
 
-  it('should allow executable file map', () => {
-    assertType<TestSubject>({ mkbuild: './dist/cli.mjs' })
+  it('should extract DependencyMap<string>', () => {
+    expectTypeOf<TestSubject>().extract<DependencyMap<string>>().not.toBeNever()
   })
 
-  it('should allow path to executable file', () => {
-    assertType<TestSubject>('./dist/cli.mjs')
+  it('should extract string', () => {
+    expectTypeOf<TestSubject>().extract<string>().toBeString()
   })
 })
