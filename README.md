@@ -45,7 +45,71 @@ yarn add @flex-development/pkg-types@flex-development/pkg-types
 
 ## Use
 
-**TODO**: Update documentation.
+```typescript
+import type { PackageJson } from '@flex-development/pkg-types'
+import fs from 'node:fs'
+import path from 'node:path'
+
+/**
+ * Enables or disables [`type`][1] in `package.json`.
+ *
+ * [1]: https://nodejs.org/api/packages.html#type
+ *
+ * @example
+ *  toggle()
+ * @example
+ *  toggle('off')
+ * @example
+ *  toggle('on')
+ *
+ * @param {'off' | 'on'} [command] - Toggle command
+ * @return {void} Nothing when complete
+ */
+function toggle(command?: 'off' | 'on'): void {
+  // see: https://yarnpkg.com/advanced/lifecycle-scripts#environment-variables
+  const { npm_package_json = 'package.json' } = process.env
+
+  /**
+   * Absolute path to `package.json`.
+   *
+   * @const {string} pkgfile
+   */
+  const pkgfile: string = path.resolve(npm_package_json)
+
+  /**
+   * `package.json` data.
+   *
+   * @var {PackageJson} pkg
+   */
+  let pkg: PackageJson = JSON.parse(fs.readFileSync(pkgfile, 'utf8'))
+
+  // toggle package type
+  pkg = Object.keys(pkg).reduce<PackageJson>((acc, key) => {
+    const [, type, prefix = ''] = /^((#?)type)$/.exec(key) ?? []
+
+    if (type) {
+      key = command
+        ? `${command === 'off' ? '#' : ''}type`
+        : prefix
+        ? type.replace(new RegExp('^' + prefix), '')
+        : '#' + type
+
+      acc[key] = pkg[type]!
+    } else {
+      acc[key] = pkg[key]!
+    }
+
+    return acc
+  }, {})
+
+  // rewrite package.json
+  return void fs.writeFileSync(pkgfile, JSON.stringify(pkg, null, 2) + '\n')
+}
+
+export default toggle
+```
+
+Need this functionality? See [`toggle-pkg-type`][2] :blush:
 
 ## API
 
@@ -53,11 +117,12 @@ yarn add @flex-development/pkg-types@flex-development/pkg-types
 
 ## Related
 
-- [`tsconfig-types`][2] - TypeScript definitions for `tsconfig.json`
+- [`tsconfig-types`][3] &mdash; TypeScript definitions for `tsconfig.json`
 
 ## Contribute
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 [1]: https://typescriptlang.org/
-[2]: https://github.com/flex-development/tsconfig-types
+[2]: https://github.com/flex-development/toggle-pkg-type
+[3]: https://github.com/flex-development/tsconfig-types

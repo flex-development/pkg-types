@@ -14,6 +14,12 @@ const config = {
   overrides: [
     ...require('./.eslintrc.base.cjs').overrides,
     {
+      files: ['./scratch.ts'],
+      rules: {
+        'unicorn/prefer-json-parse-buffer': 0
+      }
+    },
+    {
       files: ['src/interfaces/dependency-map.ts', './src/types/imports.ts'],
       rules: {
         '@typescript-eslint/consistent-indexed-object-style': 0
