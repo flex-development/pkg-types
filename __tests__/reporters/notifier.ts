@@ -128,7 +128,7 @@ class Notifier implements Reporter {
    */
   public onInit(context: Vitest): void {
     this.ctx = context
-    this.start = performance.now()
+    return void (this.start = performance.now())
   }
 
   /**
