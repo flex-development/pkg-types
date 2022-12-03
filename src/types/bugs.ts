@@ -1,6 +1,6 @@
 /**
- * @file Type Definitions - BugsObject
- * @module pkg-types/types/BugsObject
+ * @file Type Definitions - Bugs
+ * @module pkg-types/types/Bugs
  */
 
 /**
@@ -9,7 +9,7 @@
  *
  * @see https://docs.npmjs.com/cli/v9/configuring-npm/package-json#bugs
  */
-type BugsObject = {
+type Bugs = {
   /**
    * Email address issues should be reported to.
    */
@@ -21,4 +21,4 @@ type BugsObject = {
   url?: string
 }
 
-export type { BugsObject as default }
+export type { Bugs as default }

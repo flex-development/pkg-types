@@ -6,7 +6,7 @@
 export type { default as Access } from './access'
 export type { default as Bin } from './bin'
 export type { default as Browser } from './browser'
-export type { default as BugsObject } from './bugs-object'
+export type { default as Bugs } from './bugs'
 export type { default as CPU } from './cpu'
 export type { default as DependencyMeta } from './dependency-meta'
 export type { default as Engine } from './engine'

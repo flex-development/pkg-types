@@ -1,12 +1,12 @@
 /**
- * @file Unit Tests - BugsObject
- * @module pkg-types/types/tests/BugsObject
+ * @file Unit Tests - Bugs
+ * @module pkg-types/types/tests/Bugs
  */
 
 import type { JsonObject, KeysRequired } from '@flex-development/tutils'
-import type TestSubject from '../bugs-object'
+import type TestSubject from '../bugs'
 
-describe('unit:types/BugsObject', () => {
+describe('unit:types/Bugs', () => {
   it('should allow empty object', () => {
     expectTypeOf<KeysRequired<TestSubject>>().toBeNever()
   })
