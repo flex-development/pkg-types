@@ -17,6 +17,7 @@
 - [Install](#install)
 - [Use](#use)
 - [API](#api)
+- [Related](#related)
 - [Contribute](#contribute)
 
 ## What is this?
@@ -50,8 +51,13 @@ yarn add @flex-development/pkg-types@flex-development/pkg-types
 
 **TODO**: Update documentation.
 
+## Related
+
+- [`tsconfig-types`][2] - TypeScript definitions for `tsconfig.json`
+
 ## Contribute
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 [1]: https://typescriptlang.org/
+[2]: https://github.com/flex-development/tsconfig-types
