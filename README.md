@@ -113,7 +113,43 @@ Need this functionality? See [`toggle-pkg-type`][2] :blush:
 
 ## API
 
-**TODO**: Update documentation.
+### Interfaces
+
+- [`DependencyMap`](src/interfaces/dependency-map.ts)
+- [`Directories`](src/interfaces/directories.ts)
+- [`PackageJson`](src/interfaces/package-json.ts)
+- [`PublishConfig`](src/interfaces/publish-config.ts)
+- [`Scripts`](src/interfaces/scripts.ts)
+
+### Types
+
+- [`Access`](src/types/access.ts)
+- [`Bin`](src/types/bin.ts)
+- [`Browser`](src/types/browser.ts)
+- [`Bugs`](src/types/bugs.ts)
+- [`CPU`](src/types/cpu.ts)
+- [`DependencyMeta`](src/types/dependency-meta.ts)
+- [`Engine`](src/types/engine.ts)
+- [`Engines`](src/types/engines.ts)
+- [`ExportCondition`](src/types/export-condition.ts)
+- [`ExportConditions`](src/types/export-conditions.ts)
+- [`Exports`](src/types/exports.ts)
+- [`FundingInfo`](src/types/funding-info.ts)
+- [`FundingType`](src/types/funding-type.ts)
+- [`HoistingLimits`](src/types/hoisiting-limits.ts)
+- [`ImportsKey`](src/types/imports-key.ts)
+- [`Imports`](src/types/imports.ts)
+- [`InstallConfig`](src/types/install-config.ts)
+- [`LicenseObject`](src/types/license-object.ts)
+- [`OS`](src/types/os.ts)
+- [`PeerDependencyMeta`](src/types/peer-dependency-meta.ts)
+- [`Person`](src/types/person.ts)
+- [`Registry`](src/types/registry.ts)
+- [`Repository`](src/types/repository.ts)
+- [`SemanticVersion`](src/types/semantic-version.ts)
+- [`Type`](src/types/type.ts)
+- [`TypesVersions`](src/types/types-versions.ts)
+- [`WorkspacesConfig`](src/types/workspaces-config.ts)
 
 ## Related
 
