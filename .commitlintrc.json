@@ -13,6 +13,7 @@
         "deps-dev",
         "deps-peer",
         "github",
+        "install",
         "interfaces",
         "patches",
         "pkg",
