@@ -42,6 +42,8 @@ Follow the steps below to setup your local development environment:
    git config --global user.username <username>
    ```
 
+   See [`.gitconfig`](.github/.gitconfig) for a global Git config example.
+
 6. Install dependencies
 
    ```sh
@@ -95,11 +97,8 @@ Follow the steps below to setup your local development environment:
 
 | name                    |
 | ----------------------- |
-| `CI`                    |
-| `NODE_ENV`              |
+| `GITHUB_TOKEN`          |
 | `NODE_NO_WARNINGS`      |
-| `NODE_OPTIONS`          |
-| `VITEST_SEGFAULT_RETRY` |
 | `ZSH_DOTENV_FILE`       |
 
 #### GitHub Actions

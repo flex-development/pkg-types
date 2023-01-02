@@ -8,7 +8,7 @@ import notifier from 'node-notifier'
 import type NotificationCenter from 'node-notifier/notifiers/notificationcenter'
 import { performance } from 'node:perf_hooks'
 import { promisify } from 'node:util'
-import dedent from 'ts-dedent'
+import { dedent } from 'ts-dedent'
 import type { File, Reporter, Task, Test, Vitest } from 'vitest'
 
 /**

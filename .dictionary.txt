@@ -6,11 +6,9 @@ dawidd
 dedupe
 dessant
 dohm
-esbenp
 esbuild
 fbca
 gpgsign
-graphqlrc
 hmarr
 iife
 keyid
@@ -24,7 +22,5 @@ npmrc
 pkgs
 preid
 syncer
-testts
 vates
-vsicons
 yarnrc
