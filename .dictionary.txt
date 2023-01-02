@@ -21,6 +21,7 @@ nocheck
 npmrc
 nvmrc
 pkgs
+pnpm
 preid
 syncer
 vates
