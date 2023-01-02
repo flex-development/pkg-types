@@ -27,6 +27,10 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": "./dist/index.d.mts",
+    "./package.json": "./package.json"
+  },
   "types": "./dist/index.d.mts",
   "scripts": {
     "build": "mkbuild",
