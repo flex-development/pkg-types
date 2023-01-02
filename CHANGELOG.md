@@ -1,3 +1,49 @@
+## [2.0.0](https://github.com/flex-development/pkg-types/compare/1.0.0...2.0.0) (2023-01-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **exports:** add subpaths `"."` and `"./package.json"`
+
+### :package: Build
+
+* **deps-dev:** Bump lint-staged from 13.0.4 to 13.1.0 ([#4](https://github.com/flex-development/pkg-types/issues/4)) ([0948ea5](https://github.com/flex-development/pkg-types/commit/0948ea5f93d22061448ed8e0516f0b9dce2d2333))
+* **exports:** add subpaths `"."` and `"./package.json"` ([2f5dad0](https://github.com/flex-development/pkg-types/commit/2f5dad08c4362639dce2db12c0e7fb49e7b22cee))
+* **yarn:** bump yarn from 4.0.0-rc.14 to 4.0.0-rc.34 ([8ccaf59](https://github.com/flex-development/pkg-types/commit/8ccaf590152118a8ce5c288e8fef90b31cff9d76))
+
+
+### :robot: Continuous Integration
+
+* [[@dependabot](https://github.com/dependabot)] fix npm package-ecosystem x yarn integration ([c18e3e2](https://github.com/flex-development/pkg-types/commit/c18e3e278a5821e8990c9aba25c7cab9f5884743))
+* **deps:** Bump actions/checkout from 3.1.0 to 3.2.0 ([#3](https://github.com/flex-development/pkg-types/issues/3)) ([63aa69d](https://github.com/flex-development/pkg-types/commit/63aa69dade88d24862b7b350a235345cb330effc))
+* **deps:** Bump dessant/lock-threads from 3.0.0 to 4.0.0 ([#2](https://github.com/flex-development/pkg-types/issues/2)) ([eefa23e](https://github.com/flex-development/pkg-types/commit/eefa23ee8898a4bc1e209d58e715706c3cf790a0))
+* **workflows:** [`add-to-project`] add items from repo admin account ([21ca38b](https://github.com/flex-development/pkg-types/commit/21ca38b4918db3752f0c19549c313d26f854ba1a))
+* **workflows:** [`publish`] cleanup registry scope ([9e89b98](https://github.com/flex-development/pkg-types/commit/9e89b98b59bf290d42996f9ceefb3f4484701b34))
+* **workflows:** [`publish`] use node version file ([caf9cff](https://github.com/flex-development/pkg-types/commit/caf9cfff30c8f42892c533b700982ab44e42626b))
+* **workflows:** [`typescript`] add typescript workflow ([f169f70](https://github.com/flex-development/pkg-types/commit/f169f7080f32a099997a6de2e30bae9bfb3de05f))
+
+
+### :pencil: Documentation
+
+* add "contributor covenant code of conduct" ([30019d2](https://github.com/flex-development/pkg-types/commit/30019d25c484141dcd096cb8a16735acad2a6ae1))
+
+
+### :bug: Fixes
+
+* **install:** [git] make `postinstall` script work with git install ([99ce5e0](https://github.com/flex-development/pkg-types/commit/99ce5e0126b5e0a337ed3ed6297145f7b2a76b07))
+
+
+### :house_with_garden: Housekeeping
+
+* update project architecture ([a7de0af](https://github.com/flex-development/pkg-types/commit/a7de0af123b97baf01a78d4f8d3f175fd6670709))
+* **github:** add "package manager" dropdown to bug report template ([78e41eb](https://github.com/flex-development/pkg-types/commit/78e41eb945ebbe6c5fc190a2cfdaa791d9d07726))
+* **github:** add "typescript version" input to bug report template ([d7edc57](https://github.com/flex-development/pkg-types/commit/d7edc5712ca944ad73eea497e0b48b250ae91120))
+* **github:** add commit scope `exports` ([86d5ab9](https://github.com/flex-development/pkg-types/commit/86d5ab9ecd2c6c9aaad1a93d108da153a3605f37))
+* **github:** add commit scope `install` ([dd4f9db](https://github.com/flex-development/pkg-types/commit/dd4f9dbc7b82d062c506ba9a6eb85a827b9ef5cf))
+* **github:** add label `scope:install` ([6d67de7](https://github.com/flex-development/pkg-types/commit/6d67de7459cfaa7ac013ce74af197a81f20d0b3a))
+* **github:** add label `status:triaged` ([35bb58c](https://github.com/flex-development/pkg-types/commit/35bb58c8492d8cd35e0671045779a105ff2b81ea))
+* **vscode:** update settings ([358a6f6](https://github.com/flex-development/pkg-types/commit/358a6f68a59ce385dc3d3ae8d6891b188b418aae))
+
 ## 1.0.0 (2022-12-03)
 
 
