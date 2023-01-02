@@ -2,7 +2,7 @@
 
 # Local Release Workflow
 
-# 1. run tests
+# 1. run typecheck
 # 2. pack project
 # 3. get new package version
 # 4. get release branch name
@@ -12,7 +12,7 @@
 # 8. push release branch to origin
 # 9. cleanup
 
-yarn test
+yarn typecheck
 yarn pack -o %s-%v.tgz
 VERSION=$(jq .version package.json -r)
 RELEASE_BRANCH=release/$VERSION
