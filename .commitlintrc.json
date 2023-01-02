@@ -12,6 +12,7 @@
         "deps",
         "deps-dev",
         "deps-peer",
+        "exports",
         "github",
         "install",
         "interfaces",
