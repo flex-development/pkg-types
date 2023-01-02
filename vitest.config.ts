@@ -103,7 +103,7 @@ const config: UserConfigExport = defineConfig((): UserConfig => {
       typecheck: {
         allowJs: false,
         checker: 'tsc',
-        ignoreSourceErrors: !ci,
+        ignoreSourceErrors: false,
         include: ['**/__tests__/*.spec-d.ts'],
         tsconfig: path.resolve('tsconfig.typecheck.json')
       }
