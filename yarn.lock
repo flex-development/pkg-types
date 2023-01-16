@@ -6012,19 +6012,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mlly@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "mlly@npm:1.0.0"
-  dependencies:
-    acorn: "npm:^8.8.1"
-    pathe: "npm:^1.0.0"
-    pkg-types: "npm:^1.0.0"
-    ufo: "npm:^1.0.0"
-  checksum: 654985e2a5c8ebdc651dce28d889d876838e94395a3c487c17c990c492d0dd97d18c2852261f25915170dcbe56907bce8d97390c44033318cd293f4c91a52bdf
-  languageName: node
-  linkType: hard
-
-"mlly@npm:^1.1.0":
+"mlly@npm:^1.0.0, mlly@npm:^1.1.0":
   version: 1.1.0
   resolution: "mlly@npm:1.1.0"
   dependencies:
