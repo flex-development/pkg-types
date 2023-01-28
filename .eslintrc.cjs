@@ -20,13 +20,13 @@ const config = {
       }
     },
     {
-      files: ['src/interfaces/dependency-map.ts', './src/types/imports.ts'],
+      files: ['src/interfaces/dependency-map.ts', 'src/types/imports.ts'],
       rules: {
         '@typescript-eslint/consistent-indexed-object-style': 0
       }
     },
     {
-      files: ['./src/types/__tests__/types-versions.spec-d.ts'],
+      files: ['src/types/__tests__/types-versions.spec-d.ts'],
       rules: {
         'sort-keys': 0
       }

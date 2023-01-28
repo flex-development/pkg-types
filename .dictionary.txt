@@ -11,10 +11,12 @@ fbca
 gpgsign
 hmarr
 iife
+infile
 keyid
 larsgw
 lcov
 libc
+lintstagedrc
 micnncim
 mkbuild
 nocheck
