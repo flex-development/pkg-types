@@ -118,7 +118,7 @@
     "prettier-plugin-sh": "0.12.8",
     "sade": "1.8.1",
     "semver": "7.3.8",
-    "tempfile": "4.0.0",
+    "tempfile": "5.0.0",
     "trash-cli": "5.0.0",
     "ts-dedent": "2.2.0",
     "typescript": "5.0.0-dev.20230129",
