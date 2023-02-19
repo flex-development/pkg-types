@@ -4,7 +4,7 @@
 
 # 1. run typecheck
 # 2. pack project
-# 3. run check:types:build
+# 3. run postbuild typecheck
 # 4. get new package version
 # 5. get release branch name
 # 6. switch to release branch

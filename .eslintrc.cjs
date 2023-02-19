@@ -9,12 +9,11 @@
  * @const config - ESLint configuration object
  */
 const config = {
-  root: true,
   extends: ['./.eslintrc.base.cjs'],
   overrides: [
     ...require('./.eslintrc.base.cjs').overrides,
     {
-      files: ['./scratch.ts'],
+      files: ['scratch.ts'],
       rules: {
         'unicorn/prefer-json-parse-buffer': 0
       }
@@ -31,7 +30,8 @@ const config = {
         'sort-keys': 0
       }
     }
-  ]
+  ],
+  root: true
 }
 
 module.exports = config
