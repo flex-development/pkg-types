@@ -2,11 +2,9 @@ ardatan
 bdougie
 cefc
 commitlintrc
-dawidd
 dedupe
 dessant
 dohm
-esbuild
 fbca
 ggshield
 gpgsign
@@ -18,7 +16,6 @@ larsgw
 lcov
 libc
 lintstagedrc
-micnncim
 mkbuild
 mlly
 nocheck
@@ -26,9 +23,7 @@ npmrc
 nvmrc
 pathe
 pkgs
-pnpm
 preid
-syncer
 tscu
 unstub
 vates

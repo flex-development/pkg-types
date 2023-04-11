@@ -1,5 +1,6 @@
 # pkg-types
 
+[![github release](https://img.shields.io/github/v/release/flex-development/pkg-types.svg?include_prereleases&sort=semver)](https://github.com/flex-development/pkg-types/releases/latest)
 [![npm](https://img.shields.io/npm/v/@flex-development/pkg-types.svg)](https://npmjs.com/package/@flex-development/pkg-types)
 [![module type: esm](https://img.shields.io/badge/module%20type-esm-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
 [![license](https://img.shields.io/github/license/flex-development/pkg-types.svg)](LICENSE.md)
