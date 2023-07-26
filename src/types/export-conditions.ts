@@ -10,7 +10,7 @@ import type Exports from './exports'
 /**
  * Object containing conditions indicating how to resolve a package entry point.
  *
- * @see [`ExportCondition`]({@link ./export-condition.ts})
+ * @see {@linkcode ExportCondition}
  */
 type ExportConditions = ExactOptionalPropertyTypes<{
   [condition in ExportCondition]?: Exports

@@ -3,12 +3,12 @@
  * @module pkg-types/types/tests/PeerDependencyMeta
  */
 
-import type { JsonObject, KeysRequired } from '@flex-development/tutils'
+import type { JsonObject, RequiredKeys } from '@flex-development/tutils'
 import type TestSubject from '../peer-dependency-meta'
 
 describe('unit:types/PeerDependencyMeta', () => {
   it('should allow empty object', () => {
-    expectTypeOf<KeysRequired<TestSubject>>().toBeNever()
+    expectTypeOf<RequiredKeys<TestSubject>>().toBeNever()
   })
 
   it('should be json object', () => {

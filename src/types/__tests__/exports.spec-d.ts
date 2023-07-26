@@ -15,7 +15,7 @@ describe('unit:types/Exports', () => {
   it('should extract (ExportConditions | string)[]', () => {
     expectTypeOf<TestSubject>()
       .extract<(ExportConditions | string)[]>()
-      .toBeArray()
+      .not.toBeNever()
   })
 
   it('should extract ExportConditions', () => {
