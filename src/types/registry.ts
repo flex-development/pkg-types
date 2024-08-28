@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Registry
+ * @file Type Aliases - Registry
  * @module pkg-types/types/Registry
  */
 

@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - CPU
+ * @file Type Aliases - CPU
  * @module pkg-types/types/CPU
  */
 

@@ -1,15 +1,15 @@
 # pkg-types
 
-[![github release](https://img.shields.io/github/v/release/flex-development/pkg-types.svg?include_prereleases&sort=semver)](https://github.com/flex-development/pkg-types/releases/latest)
+[![github release](https://img.shields.io/github/v/release/flex-development/pkg-types.svg?include_prereleases\&sort=semver)](https://github.com/flex-development/pkg-types/releases/latest)
 [![npm](https://img.shields.io/npm/v/@flex-development/pkg-types.svg)](https://npmjs.com/package/@flex-development/pkg-types)
 [![module type: esm](https://img.shields.io/badge/module%20type-esm-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
 [![license](https://img.shields.io/github/license/flex-development/pkg-types.svg)](LICENSE.md)
-[![conventional commits](https://img.shields.io/badge/-conventional%20commits-fe5196?logo=conventional-commits&logoColor=ffffff)](https://conventionalcommits.org/)
-[![typescript](https://img.shields.io/badge/-typescript-3178c6?logo=typescript&logoColor=ffffff)](https://typescriptlang.org/)
-[![vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)](https://vitest.dev/)
-[![yarn](https://img.shields.io/badge/-yarn-2c8ebb?style=flat&logo=yarn&logoColor=ffffff)](https://yarnpkg.com/)
+[![conventional commits](https://img.shields.io/badge/-conventional%20commits-fe5196?logo=conventional-commits\&logoColor=ffffff)](https://conventionalcommits.org)
+[![typescript](https://img.shields.io/badge/-typescript-3178c6?logo=typescript\&logoColor=ffffff)](https://typescriptlang.org)
+[![vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat\&logo=vitest\&logoColor=ffffff)](https://vitest.dev)
+[![yarn](https://img.shields.io/badge/-yarn-2c8ebb?style=flat\&logo=yarn\&logoColor=ffffff)](https://yarnpkg.com)
 
-[TypeScript][1] definitions for `package.json`
+[TypeScript][] definitions for `package.json`
 
 ## Contents
 
@@ -26,20 +26,16 @@ This package contains TypeScript definitions for `package.json` files and values
 
 ## Install
 
+In Node.js with [yarn][]:
+
 ```sh
 yarn add @flex-development/pkg-types
 ```
 
-From Git:
-
-```sh
-yarn add @flex-development/pkg-types@flex-development/pkg-types
-```
-
 <blockquote>
   <small>
-    See <a href='https://yarnpkg.com/features/protocols#git'>Git - Protocols | Yarn</a>
-    &nbsp;for details on requesting a specific branch, commit, or tag.
+    See <a href='https://yarnpkg.com/protocol/git'>Git - Protocols | Yarn</a>
+    &nbsp;for details regarding installing from Git.
   </small>
 </blockquote>
 
@@ -109,7 +105,7 @@ function toggle(command?: 'off' | 'on'): void {
 export default toggle
 ```
 
-Need this functionality? See [`toggle-pkg-type`][2] :blush:
+Need this functionality? See [`toggle-pkg-type`][toggle-pkg-type] \:blush:
 
 ## API
 
@@ -153,12 +149,16 @@ Need this functionality? See [`toggle-pkg-type`][2] :blush:
 
 ## Related
 
-- [`tsconfig-types`][3] &mdash; TypeScript definitions for `tsconfig.json`
+- [`tsconfig-types`][tsconfig-types] — TypeScript definitions for `tsconfig.json`
 
 ## Contribute
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-[1]: https://typescriptlang.org/
-[2]: https://github.com/flex-development/toggle-pkg-type
-[3]: https://github.com/flex-development/tsconfig-types
+[toggle-pkg-type]: https://github.com/flex-development/toggle-pkg-type
+
+[tsconfig-types]: https://github.com/flex-development/tsconfig-types
+
+[typescript]: https://www.typescriptlang.org
+
+[yarn]: https://yarnpkg.com

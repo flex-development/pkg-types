@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - ExportConditions
+ * @file Type Aliases - ExportConditions
  * @module tutils/types/ExportConditions
  */
 

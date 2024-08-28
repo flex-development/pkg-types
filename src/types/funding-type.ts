@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - FundingType
+ * @file Type Aliases - FundingType
  * @module pkg-types/types/FundingType
  */
 

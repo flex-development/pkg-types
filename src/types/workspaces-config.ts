@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - WorkspacesConfig
+ * @file Type Aliases - WorkspacesConfig
  * @module pkg-types/types/WorkspacesConfig
  */
 

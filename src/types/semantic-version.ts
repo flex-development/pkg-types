@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - SemanticVersion
+ * @file Type Aliases - SemanticVersion
  * @module pkg-types/types/SemanticVersion
  */
 

@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - OS
+ * @file Type Aliases - OS
  * @module pkg-types/types/OS
  */
 

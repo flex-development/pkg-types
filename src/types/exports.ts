@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Exports
+ * @file Type Aliases - Exports
  * @module tutils/types/Exports
  */
 

@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
+    "customConditions": [],
     "declaration": true,
     "noEmitOnError": true,
+    "paths": {
+      "#src/*": ["src/*"]
+    },
     "skipLibCheck": false,
-    "target": "es2022"
+    "target": "es2023"
   },
-  "exclude": ["**/__mocks__", "**/__tests__"],
+  "exclude": [],
   "extends": "./tsconfig.json",
-  "files": ["./typings/@types/node/http2.d.ts"],
-  "include": ["./dist/*", "./src/*"]
+  "include": ["./dist/*"]
 }

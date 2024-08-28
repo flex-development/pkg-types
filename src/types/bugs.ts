@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Bugs
+ * @file Type Aliases - Bugs
  * @module pkg-types/types/Bugs
  */
 

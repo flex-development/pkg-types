@@ -5,7 +5,6 @@
  */
 
 import { defineBuildConfig, type Config } from '@flex-development/mkbuild'
-import pkg from './package.json' assert { type: 'json' }
 
 /**
  * Build configuration options.
@@ -15,7 +14,6 @@ import pkg from './package.json' assert { type: 'json' }
 const config: Config = defineBuildConfig({
   charset: 'utf8',
   dts: 'only',
-  target: pkg.engines.node.replace(/^\D+/, 'node'),
   tsconfig: 'tsconfig.build.json'
 })
 

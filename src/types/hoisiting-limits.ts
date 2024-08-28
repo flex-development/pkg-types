@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - HoistingLimits
+ * @file Type Aliases - HoistingLimits
  * @module pkg-types/types/HoistingLimits
  */
 

@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - TypesVersions
+ * @file Type Aliases - TypesVersions
  * @module pkg-types/types/TypesVersions
  */
 

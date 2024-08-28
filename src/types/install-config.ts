@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - InstallConfig
+ * @file Type Aliases - InstallConfig
  * @module pkg-types/types/InstallConfig
  */
 

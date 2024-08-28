@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Imports
+ * @file Type Aliases - Imports
  * @module pkg-types/types/Imports
  */
 

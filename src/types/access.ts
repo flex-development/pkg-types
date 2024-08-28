@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Access
+ * @file Type Aliases - Access
  * @module pkg-types/types/Access
  */
 

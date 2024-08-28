@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Bin
+ * @file Type Aliases - Bin
  * @module pkg-types/types/Bin
  */
 

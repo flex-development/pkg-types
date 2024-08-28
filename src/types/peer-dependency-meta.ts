@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - PeerDependencyMeta
+ * @file Type Aliases - PeerDependencyMeta
  * @module pkg-types/types/PeerDependencyMeta
  */
 

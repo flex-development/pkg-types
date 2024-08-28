@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - LicenseObject
+ * @file Type Aliases - LicenseObject
  * @module pkg-types/types/LicenseObject
  */
 

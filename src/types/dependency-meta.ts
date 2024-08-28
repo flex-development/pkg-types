@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - DependencyMeta
+ * @file Type Aliases - DependencyMeta
  * @module pkg-types/types/DependencyMeta
  */
 

@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Person
+ * @file Type Aliases - Person
  * @module pkg-types/types/Person
  */
 

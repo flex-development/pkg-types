@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Engine
+ * @file Type Aliases - Engine
  * @module pkg-types/types/Engine
  */
 

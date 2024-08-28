@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Browser
+ * @file Type Aliases - Browser
  * @module pkg-types/types/Browser
  */
 

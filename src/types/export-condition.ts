@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - ExportCondition
+ * @file Type Aliases - ExportCondition
  * @module pkg-types/types/ExportCondition
  */
 

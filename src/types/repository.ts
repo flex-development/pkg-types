@@ -1,5 +1,5 @@
 /**
- * @file Type Definitions - Repository
+ * @file Type Aliases - Repository
  * @module pkg-types/types/Repository
  */
 
