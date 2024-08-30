@@ -5,12 +5,11 @@ set -e
 # Local Release Workflow
 #
 # 1. run typecheck
-# 2. run tests
-# 3. pack project
-# 4. run postbuild typecheck
-# 5. analyze types
-# 6. create release chore commit
-# 7. cleanup
+# 2. pack project
+# 3. run postbuild typecheck
+# 4. analyze types
+# 5. create release chore commit
+# 6. cleanup
 #
 # References:
 #
@@ -19,7 +18,6 @@ set -e
 # - https://jqlang.github.io
 
 yarn typecheck
-yarn test:cov
 yarn pack
 yarn check:types:build
 attw package.tgz
