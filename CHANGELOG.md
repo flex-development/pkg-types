@@ -1,3 +1,71 @@
+## [4.0.0](https://github.com/flex-development/pkg-types/compare/3.0.0...4.0.0) (2024-08-30)
+
+### ⚠ BREAKING CHANGES
+
+- api
+
+### :package: Build
+
+- [[`6f6f795`](https://github.com/flex-development/pkg-types/commit/6f6f795de8d68106130feb2a457c7600094f30e4)] **deps-dev:** Bump @arethetypeswrong/cli from 0.7.0 to 0.7.1 ([#238](https://github.com/flex-development/pkg-types/issues/238))
+- [[`a7bf7bd`](https://github.com/flex-development/pkg-types/commit/a7bf7bda9e395e822edb70cdb23c6a1ddf12644c)] **deps-dev:** Bump @commitlint/cli from 17.6.7 to 17.7.0 ([#252](https://github.com/flex-development/pkg-types/issues/252))
+- [[`842ea1b`](https://github.com/flex-development/pkg-types/commit/842ea1b2fb4ae6ac77a31b836ee4f6532a866f14)] **deps-dev:** Bump @commitlint/cli from 17.7.0 to 17.7.1 ([#254](https://github.com/flex-development/pkg-types/issues/254))
+- [[`f6b14c7`](https://github.com/flex-development/pkg-types/commit/f6b14c7a534ba5803aacf2f9fdda834b1c6a8749)] **deps-dev:** Bump @commitlint/cli from 19.4.0 to 19.4.1 in the commitlint group ([#314](https://github.com/flex-development/pkg-types/issues/314))
+- [[`ba10641`](https://github.com/flex-development/pkg-types/commit/ba106417153a52dc8b6429618aa083a1404d1844)] **deps-dev:** Bump @flex-development/decorator-regex from 1.0.0 to 2.0.0 ([#236](https://github.com/flex-development/pkg-types/issues/236))
+- [[`91a95ee`](https://github.com/flex-development/pkg-types/commit/91a95ee215f6643f44396976c7f014ac103cc23e)] **deps-dev:** Bump @flex-development/mkbuild from 1.0.0-alpha.20 to 1.0.0-alpha.21 ([#253](https://github.com/flex-development/pkg-types/issues/253))
+- [[`1394a7b`](https://github.com/flex-development/pkg-types/commit/1394a7b72fde217ab8661c179c67040a66c9d469)] **deps-dev:** Bump @flex-development/mkbuild from 1.0.0-alpha.21 to 1.0.0-alpha.23 ([#282](https://github.com/flex-development/pkg-types/issues/282))
+- [[`095ac75`](https://github.com/flex-development/pkg-types/commit/095ac75847491a84dda035aa3fe7763cf85bc9b9)] **deps-dev:** Bump @flex-development/mlly from 1.0.0-alpha.15 to 1.0.0-alpha.16 ([#247](https://github.com/flex-development/pkg-types/issues/247))
+- [[`cb57dcc`](https://github.com/flex-development/pkg-types/commit/cb57dcc5b5915adb6505ccdff0f55d7a5d413894)] **deps-dev:** Bump @flex-development/mlly from 1.0.0-alpha.16 to 1.0.0-alpha.17 ([#248](https://github.com/flex-development/pkg-types/issues/248))
+- [[`7007e29`](https://github.com/flex-development/pkg-types/commit/7007e29721c46a024b92bc98aade24f3106fb8d4)] **deps-dev:** Bump @flex-development/pathe from 1.0.3 to 2.0.0 ([#231](https://github.com/flex-development/pkg-types/issues/231))
+- [[`5760f04`](https://github.com/flex-development/pkg-types/commit/5760f048d5c158d3b8a53d0a6fa8a866dce25064)] **deps-dev:** Bump @flex-development/tsconfig-utils from 1.1.2 to 2.0.2 ([#260](https://github.com/flex-development/pkg-types/issues/260))
+- [[`69c69cf`](https://github.com/flex-development/pkg-types/commit/69c69cfdde7fe999e2cb0541037dd91a738cfc28)] **deps-dev:** Bump @flex-development/tutils from 6.0.0-alpha.12 to 6.0.0-alpha.13 ([#229](https://github.com/flex-development/pkg-types/issues/229))
+- [[`ff55018`](https://github.com/flex-development/pkg-types/commit/ff55018e7176e4323afe9a8a8cb8ffa1bb9eac96)] **deps-dev:** Bump @flex-development/tutils from 6.0.0-alpha.13 to 6.0.0-alpha.14 ([#233](https://github.com/flex-development/pkg-types/issues/233))
+- [[`9c994b9`](https://github.com/flex-development/pkg-types/commit/9c994b95e82e9c5634407b98fa8e1801273801a8)] **deps-dev:** Bump @flex-development/tutils from 6.0.0-alpha.14 to 6.0.0-alpha.15 ([#242](https://github.com/flex-development/pkg-types/issues/242))
+- [[`8193e02`](https://github.com/flex-development/pkg-types/commit/8193e02da4932b9cac7368a79479f82fad2cfa5b)] **deps-dev:** Bump @stylistic/eslint-plugin from 2.6.4 to 2.7.1 ([#315](https://github.com/flex-development/pkg-types/issues/315))
+- [[`8f6625b`](https://github.com/flex-development/pkg-types/commit/8f6625b8ec966d4e9632b5c613a55e5a06287efd)] **deps-dev:** Bump esbuild from 0.18.17 to 0.18.19 ([#241](https://github.com/flex-development/pkg-types/issues/241))
+- [[`f2d7d39`](https://github.com/flex-development/pkg-types/commit/f2d7d39faf19197bb2d04abd6ac32dbd6b15f3e3)] **deps-dev:** Bump esbuild from 0.18.19 to 0.19.0 ([#249](https://github.com/flex-development/pkg-types/issues/249))
+- [[`0b8a8ae`](https://github.com/flex-development/pkg-types/commit/0b8a8aeaaa1c701406ce5266ebcad9f7e884792b)] **deps-dev:** Bump esbuild from 0.19.0 to 0.19.2 ([#255](https://github.com/flex-development/pkg-types/issues/255))
+- [[`1fbbd19`](https://github.com/flex-development/pkg-types/commit/1fbbd19cf7273e3779628250593a66019a6c93fc)] **deps-dev:** Bump eslint from 8.45.0 to 8.46.0 ([#228](https://github.com/flex-development/pkg-types/issues/228))
+- [[`f3572f0`](https://github.com/flex-development/pkg-types/commit/f3572f08c10ca821c0e92f592279a8a9de37578e)] **deps-dev:** Bump eslint from 8.46.0 to 8.47.0 ([#259](https://github.com/flex-development/pkg-types/issues/259))
+- [[`1347214`](https://github.com/flex-development/pkg-types/commit/1347214c7cc1c0413d3fbcd18c4f2c9fb62460a7)] **deps-dev:** Bump eslint-config-prettier from 8.10.0 to 9.0.0 ([#243](https://github.com/flex-development/pkg-types/issues/243))
+- [[`2eaebe3`](https://github.com/flex-development/pkg-types/commit/2eaebe36106347c0656e73ab16dbdcb67d815821)] **deps-dev:** Bump eslint-config-prettier from 8.8.0 to 8.9.0 ([#227](https://github.com/flex-development/pkg-types/issues/227))
+- [[`5ae2cc6`](https://github.com/flex-development/pkg-types/commit/5ae2cc6f850136ebc01dce42142a832cac92bc65)] **deps-dev:** Bump eslint-config-prettier from 8.9.0 to 8.10.0 ([#239](https://github.com/flex-development/pkg-types/issues/239))
+- [[`d5efae7`](https://github.com/flex-development/pkg-types/commit/d5efae78aefab98463a1553e1a2102e1aa012883)] **deps-dev:** Bump eslint-import-resolver-typescript from 3.5.5 to 3.6.0 ([#251](https://github.com/flex-development/pkg-types/issues/251))
+- [[`f44943b`](https://github.com/flex-development/pkg-types/commit/f44943bc3ec99f08adbf49a4cbb8795a12fe57ee)] **deps-dev:** Bump eslint-plugin-import from 2.27.5 to 2.28.0 ([#230](https://github.com/flex-development/pkg-types/issues/230))
+- [[`b297894`](https://github.com/flex-development/pkg-types/commit/b297894eeb0631f53310253753b8b57cfaaa4e6f)] **deps-dev:** Bump eslint-plugin-markdown from 3.0.0 to 3.0.1 ([#234](https://github.com/flex-development/pkg-types/issues/234))
+- [[`051efb1`](https://github.com/flex-development/pkg-types/commit/051efb163ce16699fdcffb18d77dfa3b38768fb2)] **deps-dev:** Bump graphql from 16.7.1 to 16.8.0 ([#265](https://github.com/flex-development/pkg-types/issues/265))
+- [[`8b49e20`](https://github.com/flex-development/pkg-types/commit/8b49e206e039566ce1f9e57947e1aa106f59ebcd)] **deps-dev:** Bump graphql from 16.8.0 to 16.8.1 ([#289](https://github.com/flex-development/pkg-types/issues/289))
+- [[`568c77a`](https://github.com/flex-development/pkg-types/commit/568c77a82278f310360913e96e70f2e9862a4c39)] **deps-dev:** Bump prettier from 3.0.0 to 3.0.1 ([#240](https://github.com/flex-development/pkg-types/issues/240))
+- [[`5fc931f`](https://github.com/flex-development/pkg-types/commit/5fc931f8fd97ca12b53c39f6444782974b09f095)] **deps-dev:** Bump prettier from 3.0.1 to 3.0.2 ([#261](https://github.com/flex-development/pkg-types/issues/261))
+- [[`84afcf3`](https://github.com/flex-development/pkg-types/commit/84afcf38a1f04f254224710a42297f0dd6b0cd8c)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#232](https://github.com/flex-development/pkg-types/issues/232))
+- [[`e4d82c2`](https://github.com/flex-development/pkg-types/commit/e4d82c23266bac317e4888a2e4d092eb22066cd8)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#245](https://github.com/flex-development/pkg-types/issues/245))
+- [[`b13f881`](https://github.com/flex-development/pkg-types/commit/b13f8814fcd33a9d187825afa5bb286f92803a22)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#258](https://github.com/flex-development/pkg-types/issues/258))
+- [[`c8cdff5`](https://github.com/flex-development/pkg-types/commit/c8cdff52ec436e2d2aed1953ef63e398e9687540)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#291](https://github.com/flex-development/pkg-types/issues/291))
+- [[`5b8b502`](https://github.com/flex-development/pkg-types/commit/5b8b502cff64936f05149fd0271c4629bd320cfd)] **deps-dev:** Bump vite from 4.4.7 to 4.4.8 ([#237](https://github.com/flex-development/pkg-types/issues/237))
+- [[`675c64a`](https://github.com/flex-development/pkg-types/commit/675c64ab9f676188ca824944e7985530b2f1d7ce)] **deps-dev:** Bump vite from 4.4.8 to 4.4.9 ([#246](https://github.com/flex-development/pkg-types/issues/246))
+- [[`29f6460`](https://github.com/flex-development/pkg-types/commit/29f6460b7b3a39036e4ba8b5c83ff2c6e5c0e2d0)] **deps:** Bump tar from 6.1.13 to 6.2.1 ([#313](https://github.com/flex-development/pkg-types/issues/313))
+
+### :robot: Continuous Integration
+
+- [[`60c74ec`](https://github.com/flex-development/pkg-types/commit/60c74ecb293422e36f02b4c7dcb8ff259dc03963)] **deps:** Bump actions/cache from 3.3.1 to 3.3.2 ([#279](https://github.com/flex-development/pkg-types/issues/279))
+- [[`db58123`](https://github.com/flex-development/pkg-types/commit/db58123337d5bb91689a684750d5a6b4e5fcd87a)] **deps:** Bump actions/checkout from 3.5.3 to 3.6.0 ([#270](https://github.com/flex-development/pkg-types/issues/270))
+- [[`9595942`](https://github.com/flex-development/pkg-types/commit/9595942115573ef5caee2046973d971ef63f3456)] **deps:** Bump actions/checkout from 3.6.0 to 4.0.0 ([#277](https://github.com/flex-development/pkg-types/issues/277))
+- [[`0babd57`](https://github.com/flex-development/pkg-types/commit/0babd57cf90edd859fbff621ef1506ed9bf77761)] **deps:** Bump actions/checkout from 4.0.0 to 4.1.0 ([#293](https://github.com/flex-development/pkg-types/issues/293))
+- [[`d0f2ef3`](https://github.com/flex-development/pkg-types/commit/d0f2ef3ea9ab3d0a2d35f80d9aa9168a383be415)] **deps:** Bump actions/checkout from 4.1.0 to 4.1.1 ([#298](https://github.com/flex-development/pkg-types/issues/298))
+- [[`24a452b`](https://github.com/flex-development/pkg-types/commit/24a452b98c378201bb7c70c52784289553e3520b)] **deps:** Bump actions/setup-node from 3.7.0 to 3.8.0 ([#257](https://github.com/flex-development/pkg-types/issues/257))
+- [[`26a5401`](https://github.com/flex-development/pkg-types/commit/26a5401fe3eb6fb2e4df2fffa48a1afef51dba75)] **deps:** Bump actions/setup-node from 3.8.0 to 3.8.1 ([#263](https://github.com/flex-development/pkg-types/issues/263))
+- [[`6bc9876`](https://github.com/flex-development/pkg-types/commit/6bc9876d341c103a3f0c852b8a6ab03889eb1213)] **deps:** Bump actions/upload-artifact from 3.1.2 to 3.1.3 ([#278](https://github.com/flex-development/pkg-types/issues/278))
+- [[`59fa4bb`](https://github.com/flex-development/pkg-types/commit/59fa4bbee464cc04c525a7038cf47d9f6184a143)] **deps:** Bump crazy-max/ghaction-import-gpg from 5.3.0 to 5.4.0 ([#276](https://github.com/flex-development/pkg-types/issues/276))
+- [[`219ecab`](https://github.com/flex-development/pkg-types/commit/219ecabe5ca68d6ad384c06c053691f770400c04)] **deps:** Bump crazy-max/ghaction-import-gpg from 5.4.0 to 6.0.0 ([#284](https://github.com/flex-development/pkg-types/issues/284))
+
+### :house_with_garden: Housekeeping
+
+- [[`e86c2fa`](https://github.com/flex-development/pkg-types/commit/e86c2fae2503a8262e2024366aa91569a6b1cdbb)] update project architecture
+- [[`9900a5d`](https://github.com/flex-development/pkg-types/commit/9900a5d7d08f4433dd895a68befbb727a37f307d)] **pkg:** fix `release` script
+
+### :mechanical_arm: Refactors
+
+- [[`1524cee`](https://github.com/flex-development/pkg-types/commit/1524ceed575ac1d26453047784f57e24756a59f6)] api
+
 ## [3.0.0](https://github.com/flex-development/pkg-types/compare/2.0.0...3.0.0) (2023-07-26)
 
 ### ⚠ BREAKING CHANGES
@@ -263,4 +331,5 @@
 - [[`ab8a328`](https://github.com/flex-development/pkg-types/commit/ab8a32849011d78806f85760537b4aae063b2942)] **interfaces:** `FundingObject` -> `FundingInfo`
 - [[`63abb4a`](https://github.com/flex-development/pkg-types/commit/63abb4aea401a1a8e24e2de51ba47104f188a266)] **ts:** ensure definitions are json-compatible
 - [[`cc05dfb`](https://github.com/flex-development/pkg-types/commit/cc05dfb3a65b6230b30b3b436e27e0b44efa3008)] **types:** `BugsObject` -> `Bugs`
+
 
