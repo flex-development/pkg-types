@@ -29,7 +29,6 @@
     "noUnusedParameters": false,
     "outDir": "dist",
     "paths": {
-      "#src": ["src/index"],
       "#src/*": ["src/*"]
     },
     "preserveConstEnums": true,

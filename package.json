@@ -32,6 +32,8 @@
   "type": "module",
   "files": [
     "CHANGELOG.md",
+    "LICENSE.md",
+    "README.md",
     "dist"
   ],
   "exports": {
@@ -194,9 +196,6 @@
     "vite-tsconfig-paths": "5.0.1",
     "vitest": "2.0.5",
     "yaml-eslint-parser": "1.2.3"
-  },
-  "peerDependencies": {
-    "@flex-development/tutils": ">=6.0.0-alpha.7"
   },
   "packageManager": "yarn@4.4.0",
   "sideEffects": false

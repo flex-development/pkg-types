@@ -19,6 +19,7 @@ mkbuild
 nvmrc
 pathe
 pkgs
+pnpx
 preid
 shfmt
 unstub
