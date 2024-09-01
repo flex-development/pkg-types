@@ -68,6 +68,12 @@ describe('unit-d:ConditionMap', () => {
       .toEqualTypeOf<'require'>()
   })
 
+  it('should match [tsNode: "ts-node"]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty('tsNode')
+      .toEqualTypeOf<'ts-node'>()
+  })
+
   it('should match [types: "types"]', () => {
     expectTypeOf<TestSubject>().toHaveProperty('types').toEqualTypeOf<'types'>()
   })

@@ -15,11 +15,12 @@ interface ConditionMap {
   development: 'development'
   electron: 'electron'
   import: 'import'
-  nodeAddons: 'node-addons'
   node: 'node'
+  nodeAddons: 'node-addons'
   production: 'production'
   reactNative: 'react-native'
   require: 'require'
+  tsNode: 'ts-node'
   types: 'types'
 }
 
