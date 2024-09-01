@@ -3,16 +3,19 @@
  * @module pkg-types/Imports
  */
 
-import type ImportConditions from './import-conditions'
-import type ImportsKey from './imports-key'
+import type ImportsSubpath from './imports-subpath'
+import type Target from './target'
 
 /**
  * Mappings that only apply to import specifiers from within a package.
  *
- * @see {@linkcode ImportConditions}
- * @see {@linkcode ImportsKey}
+ * @see {@linkcode ImportsSubpath}
+ * @see {@linkcode Target}
  * @see https://nodejs.org/api/packages.html#subpath-imports
  */
-type Imports = { [key in ImportsKey]: ImportConditions | string }
+interface Imports {
+  [subpath: string]: Target
+  [subpath: ImportsSubpath]: Target
+}
 
 export type { Imports as default }

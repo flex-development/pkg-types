@@ -45,72 +45,73 @@ yarn add @flex-development/pkg-types
 import type {
   Condition,
   ConditionMap,
-  ExportConditions,
+  ConditionalTargets,
   Exports,
   ExportsKey,
-  ExportsList,
   ExportsObject,
-  ImportConditions,
+  ExportsSubpath,
   Imports,
-  ImportsKey,
+  ImportsSubpath,
   PackageJson,
   PackageType,
-  SubpathExports
+  SubpathExports,
+  Target,
+  TargetList
 } from '@flex-development/pkg-types'
 ```
 
 ## API
 
 - [`Access`](./src/access.ts)
-- [`Bin`](./src/bin.ts)
 - [`BinObject`](./src/bin-object.ts)
-- [`Browser`](./src/browser.ts)
+- [`Bin`](./src/bin.ts)
 - [`BrowserObject`](./src/browser-object.ts)
+- [`Browser`](./src/browser.ts)
 - [`Bugs`](./src/bugs.ts)
-- [`Condition`](./src/condition.ts)
-- [`ConditionMap`](./src/condition-map.ts)
-- [`Config`](./src/config.ts)
-- [`CPU`](./src/cpu.ts)
 - [`CPUMap`](./src/cpu-map.ts)
+- [`CPU`](./src/cpu.ts)
+- [`ConditionMap`](./src/condition-map.ts)
+- [`Condition`](./src/condition.ts)
+- [`ConditionalTargets`](./src/conditional-targets.ts)
+- [`Config`](./src/config.ts)
 - [`Dependencies`](./src/dependencies.ts)
 - [`DevDependencies`](./src/dev-dependencies.ts)
 - [`Directories`](./src/directories.ts)
-- [`Engine`](./src/engine.ts)
 - [`EngineMap`](./src/engine-map.ts)
+- [`Engine`](./src/engine.ts)
 - [`Engines`](./src/engines.ts)
-- [`ExportConditions`](./src/export-conditions.ts)
-- [`Exports`](./src/exports.ts)
 - [`ExportsKey`](./src/exports-key.ts)
-- [`ExportsList`](./src/exports-list.ts)
 - [`ExportsObject`](./src/exports-object.ts)
 - [`ExportsSubpath`](./src/exports-subpath.ts)
-- [`ImportConditions`](./src/import-conditions.ts)
+- [`Exports`](./src/exports.ts)
+- [`ImportsSubpath`](./src/imports-subpath.ts)
 - [`Imports`](./src/imports.ts)
-- [`ImportsKey`](./src/imports-key.ts)
 - [`JsonArray`](./src/json-array.ts)
 - [`JsonObject`](./src/json-object.ts)
 - [`JsonPrimitive`](./src/json-primitive.ts)
 - [`JsonValue`](./src/json-value.ts)
 - [`LicenseInfo`](./src/license-info.ts)
-- [`OptionalDependencies`](./src/optional-dependencies.ts)
-- [`OS`](./src/os.ts)
 - [`OSMap`](./src/os-map.ts)
+- [`OS`](./src/os.ts)
+- [`OptionalDependencies`](./src/optional-dependencies.ts)
 - [`PackageJson`](./src/package-json.ts)
-- [`PackageManager`](./src/package-manager.ts)
 - [`PackageManagerMap`](./src/package-manager-map.ts)
+- [`PackageManager`](./src/package-manager.ts)
 - [`PackageType`](./src/package-type.ts)
-- [`PeerDependencies`](./src/peer-dependencies.ts)
 - [`PeerDependenciesMeta`](./src/peer-dependencies-meta.ts)
+- [`PeerDependencies`](./src/peer-dependencies.ts)
 - [`PeerDependencyMetadata`](./src/peer-dependency-metadata.ts)
 - [`People`](./src/people.ts)
 - [`Person`](./src/person.ts)
 - [`PublishConfig`](./src/publish-config.ts)
 - [`RepositoryInfo`](./src/repository-info.ts)
-- [`RepositoryType`](./src/repository-type.ts)
 - [`RepositoryTypeMap`](./src/repository-type-map.ts)
+- [`RepositoryType`](./src/repository-type.ts)
 - [`Scripts`](./src/scripts.ts)
 - [`SemanticVersion`](./src/semantic-version.ts)
 - [`SubpathExports`](./src/subpath-exports.ts)
+- [`TargetList`](./src/target-list.ts)
+- [`Target`](./src/target.ts)
 - [`TypesVersions`](./src/types-versions.ts)
 - [`WorkspacesConfig`](./src/workspaces-config.ts)
 

@@ -1,15 +1,15 @@
 /**
- * @file Unit Tests - Exports
- * @module pkg-types/tests/unit-d/Exports
+ * @file Unit Tests - Target
+ * @module pkg-types/tests/unit-d/Target
  */
 
-import type TestSubject from '../exports'
-import type ExportsObject from '../exports-object'
+import type ConditionalTargets from '../conditional-targets'
+import type TestSubject from '../target'
 import type TargetList from '../target-list'
 
-describe('unit-d:Exports', () => {
-  it('should extract ExportsObject', () => {
-    expectTypeOf<TestSubject>().extract<ExportsObject>().not.toBeNever()
+describe('unit-d:Target', () => {
+  it('should extract ConditionalTargets', () => {
+    expectTypeOf<TestSubject>().extract<ConditionalTargets>().not.toBeNever()
   })
 
   it('should extract TargetList', () => {

@@ -3,23 +3,21 @@
  * @module pkg-types/SubpathExports
  */
 
-import type Exports from './exports'
-import type JsonObject from './json-object'
+import type ExportsSubpath from './exports-subpath'
+import type Target from './target'
 
 /**
- * [Subpath exports][subpath-exports] map.
+ * Subpath exports map.
  *
- * [subpath-exports]: https://nodejs.org/api/packages.html#subpath-exports
- *
- * @see {@linkcode Exports}
- * @see {@linkcode JsonObject}
- *
- * @extends {JsonObject}
+ * @see {@linkcode ExportsSubpath}
+ * @see {@linkcode Target}
+ * @see https://nodejs.org/api/packages.html#subpath-exports
  */
-interface SubpathExports extends JsonObject {
-  [subpath: `./${string}`]: Exports
-  '.'?: Exports
-  './package.json'?: Exports
+interface SubpathExports {
+  [subpath: string]: Target
+  [subpath: Exclude<ExportsSubpath, '.'>]: Target
+  '.'?: Target
+  './package.json'?: Target
 }
 
 export type { SubpathExports as default }

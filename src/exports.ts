@@ -3,16 +3,16 @@
  * @module pkg-types/Exports
  */
 
-import type ExportsList from './exports-list'
-import type ExportsObject from './exports-object'
+import type SubpathExports from './subpath-exports'
+import type Target from './target'
 
 /**
  * Package exports.
  *
- * @see {@linkcode ExportsList}
- * @see {@linkcode ExportsObject}
- * @see https://nodejs.org/api/packages.html#exports
+ * @see {@linkcode SubpathExports}
+ * @see {@linkcode Target}
+ * @see https://nodejs.org/api/packages.html#package-entry-points
  */
-type Exports = ExportsList | ExportsObject | string | null
+type Exports = SubpathExports | Target
 
 export type { Exports as default }

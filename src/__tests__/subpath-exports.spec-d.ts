@@ -4,32 +4,41 @@
  */
 
 import type { Optional } from '@flex-development/tutils'
-import type Exports from '../exports'
+import type ExportsSubpath from '../exports-subpath'
 import type JsonObject from '../json-object'
 import type TestSubject from '../subpath-exports'
+import type Target from '../target'
 
 describe('unit-d:SubpathExports', () => {
   it('should allow empty object', () => {
     assertType<TestSubject>({})
   })
 
-  it('should extend JsonObject', () => {
+  it('should match JsonObject', () => {
     expectTypeOf<TestSubject>().toMatchTypeOf<JsonObject>()
   })
 
-  it('should match Record<`./${string}`, Exports>', () => {
-    expectTypeOf<TestSubject>().toMatchTypeOf<Record<`./${string}`, Exports>>()
+  it('should match [subpath: Exclude<ExportsSubpath, ".">]: Target]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty<Exclude<ExportsSubpath, '.'>>('./lib/*.mjs')
+      .toEqualTypeOf<Target>()
   })
 
-  it('should match ["."?: Exports]', () => {
+  it('should match [[subpath: string]: Target]', () => {
+    expectTypeOf<TestSubject>()
+      .toHaveProperty<string>('')
+      .toEqualTypeOf<Target>()
+  })
+
+  it('should match ["."?: Target]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('.')
-      .toEqualTypeOf<Optional<Exports>>()
+      .toEqualTypeOf<Optional<Target>>()
   })
 
-  it('should match ["./package.json"?: Exports]', () => {
+  it('should match ["./package.json"?: Target]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('./package.json')
-      .toEqualTypeOf<Optional<Exports>>()
+      .toEqualTypeOf<Optional<Target>>()
   })
 })
