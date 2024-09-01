@@ -4,12 +4,15 @@
  */
 
 import type Condition from './condition'
+import type ExportsSubpath from './exports-subpath'
 
 /**
  * An `exports` object key.
  *
- * @see https://nodejs.org/api/packages.html#subpath-exports
+ * @see {@linkcode Condition}
+ * @see {@linkcode ExportsSubpath}
+ * @see https://nodejs.org/api/packages.html#package-entry-points
  */
-type ExportsKey = '.' | `./${string}` | Condition
+type ExportsKey = Condition | ExportsSubpath
 
 export type { ExportsKey as default }

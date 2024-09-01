@@ -83,6 +83,7 @@ import type {
 - [`ExportsKey`](./src/exports-key.ts)
 - [`ExportsList`](./src/exports-list.ts)
 - [`ExportsObject`](./src/exports-object.ts)
+- [`ExportsSubpath`](./src/exports-subpath.ts)
 - [`ImportConditions`](./src/import-conditions.ts)
 - [`Imports`](./src/imports.ts)
 - [`ImportsKey`](./src/imports-key.ts)
