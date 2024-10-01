@@ -245,9 +245,9 @@ jobs:
       matrix:
         typescript-version:
           - ${{ needs.preflight.outputs.version-typescript }}
+          - 5.5.4
           - 5.4.5
           - 5.0.4
-          - latest
     steps:
       - id: checkout
         name: Checkout ${{ env.REF_NAME }}
