@@ -4,38 +4,34 @@
  * @see https://vitest.dev/config/
  */
 
-import { ifelse, sift } from '@flex-development/tutils'
+import Notifier from '#tests/reporters/notifier'
+import pathe from '@flex-development/pathe'
 import ci from 'is-ci'
 import {
   defineConfig,
+  type ConfigEnv,
   type UserConfig,
   type UserConfigExport
 } from 'vitest/config'
 import { BaseSequencer, type WorkspaceSpec } from 'vitest/node'
-import Notifier from './__tests__/reporters/notifier'
 
 /**
  * Vitest configuration export.
  *
  * @const {UserConfigExport} config
  */
-const config: UserConfigExport = defineConfig((): UserConfig => {
-  /**
-   * Relative path to tsconfig file.
-   *
-   * @const {string} tsconfig
-   */
-  const tsconfig: string = 'tsconfig.typecheck.json'
-
+const config: UserConfigExport = defineConfig((env: ConfigEnv): UserConfig => {
   return {
     define: {},
     test: {
       allowOnly: !ci,
       environment: 'node',
       include: ['**/__tests__/*.spec-d.ts'],
-      outputFile: { json: '__tests__/typecheck.json' },
+      outputFile: {
+        json: pathe.join('__tests__', 'reports', env.mode + '.json')
+      },
       passWithNoTests: true,
-      reporters: sift([ifelse(ci, null, new Notifier()), 'json', 'verbose']),
+      reporters: [ci ? 'github-actions' : new Notifier(), 'json', 'verbose'],
       sequence: {
         /**
          * Sorting and sharding algorithm provider.
@@ -74,7 +70,7 @@ const config: UserConfigExport = defineConfig((): UserConfig => {
         ignoreSourceErrors: false,
         include: ['**/__tests__/*.spec-d.ts'],
         only: true,
-        tsconfig
+        tsconfig: 'tsconfig.typecheck.json'
       }
     }
   }

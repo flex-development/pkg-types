@@ -3,9 +3,8 @@
  * @module pkg-types/tests/unit-d/ExportsKey
  */
 
-import type Condition from '../condition'
-import type TestSubject from '../exports-key'
-import type ExportsSubpath from '../exports-subpath'
+import type TestSubject from '#lib/exports-key'
+import type { Condition, ExportsSubpath } from '@flex-development/pkg-types'
 
 describe('unit-d:ExportsKey', () => {
   it('should extract Condition', () => {

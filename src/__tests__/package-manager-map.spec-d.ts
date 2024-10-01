@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/PackageManagerMap
  */
 
-import type TestSubject from '../package-manager-map'
+import type TestSubject from '#lib/package-manager-map'
 
 describe('unit-d:PackageManagerMap', () => {
   it('should match [npm: "npm"]', () => {

@@ -3,7 +3,7 @@
  * @module pkg-types/Bin
  */
 
-import type BinObject from './bin-object'
+import type { BinObject } from '@flex-development/pkg-types'
 
 /**
  * Executable files to install into `PATH`.

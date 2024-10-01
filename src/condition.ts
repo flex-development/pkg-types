@@ -3,7 +3,7 @@
  * @module pkg-types/Condition
  */
 
-import type ConditionMap from './condition-map'
+import type { ConditionMap } from '@flex-development/pkg-types'
 
 /**
  * Union of registered export and import conditions.

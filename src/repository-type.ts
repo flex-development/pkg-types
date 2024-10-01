@@ -3,7 +3,7 @@
  * @module pkg-types/RepositoryType
  */
 
-import type RepositoryTypeMap from './repository-type-map'
+import type { RepositoryTypeMap } from '@flex-development/pkg-types'
 
 /**
  * Union of registered repository types.

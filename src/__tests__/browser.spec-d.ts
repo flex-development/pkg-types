@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/Browser
  */
 
-import type TestSubject from '../browser'
-import type BrowserObject from '../browser-object'
+import type TestSubject from '#lib/browser'
+import type { BrowserObject } from '@flex-development/pkg-types'
 
 describe('unit-d:Browser', () => {
   it('should extract BrowserObject', () => {

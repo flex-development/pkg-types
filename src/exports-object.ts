@@ -3,8 +3,10 @@
  * @module pkg-types/ExportsObject
  */
 
-import type ConditionalTargets from './conditional-targets'
-import type SubpathExports from './subpath-exports'
+import type {
+  ConditionalTargets,
+  SubpathExports
+} from '@flex-development/pkg-types'
 
 /**
  * Package exports object.

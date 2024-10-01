@@ -3,6 +3,7 @@ cefc
 commitlintrc
 dedupe
 dessant
+devlop
 docast
 dohm
 dprint
@@ -16,12 +17,15 @@ kaisugi
 libc
 lintstagedrc
 mkbuild
+mlly
 nvmrc
 pathe
 pkgs
 pnpx
 preid
+remarkrc
 shfmt
+tscu
 unstub
 vates
 vfile

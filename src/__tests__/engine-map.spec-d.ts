@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/EngineMap
  */
 
-import type TestSubject from '../engine-map'
+import type TestSubject from '#lib/engine-map'
 
 describe('unit-d:EngineMap', () => {
   it('should match [node: "node"]', () => {

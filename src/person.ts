@@ -3,7 +3,7 @@
  * @module pkg-types/Person
  */
 
-import type JsonObject from './json-object'
+import type { JsonObject } from '@flex-development/pkg-types'
 
 /**
  * Someone who has been involved in creating or maintaining a package.

@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/Bin
  */
 
-import type TestSubject from '../bin'
-import type BinObject from '../bin-object'
+import type TestSubject from '#lib/bin'
+import type { BinObject } from '@flex-development/pkg-types'
 
 describe('unit-d:Bin', () => {
   it('should extract BinObject', () => {

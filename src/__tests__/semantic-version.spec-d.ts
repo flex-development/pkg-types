@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/SemanticVersion
  */
 
-import type TestSubject from '../semantic-version'
+import type TestSubject from '#lib/semantic-version'
 
 describe('unit-d:SemanticVersion', () => {
   it('should allow "1.0.0"', () => {

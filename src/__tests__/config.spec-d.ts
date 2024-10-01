@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/Config
  */
 
-import type TestSubject from '../config'
-import type JsonObject from '../json-object'
+import type TestSubject from '#lib/config'
+import type { JsonObject } from '@flex-development/pkg-types'
 
 describe('unit-d:Config', () => {
   it('should extend JsonObject', () => {

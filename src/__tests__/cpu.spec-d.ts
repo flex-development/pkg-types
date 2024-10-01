@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/CPU
  */
 
-import type TestSubject from '../cpu'
-import type CPUMap from '../cpu-map'
+import type TestSubject from '#lib/cpu'
+import type { CPUMap } from '@flex-development/pkg-types'
 
 describe('unit-d:CPU', () => {
   it('should extract `!${CPUMap[keyof CPUMap]}`', () => {

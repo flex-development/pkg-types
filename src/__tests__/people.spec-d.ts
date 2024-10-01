@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/People
  */
 
-import type TestSubject from '../people'
-import type Person from '../person'
+import type TestSubject from '#lib/people'
+import type { Person } from '@flex-development/pkg-types'
 
 describe('unit-d:People', () => {
   it('should extract (Person | string)[]', () => {

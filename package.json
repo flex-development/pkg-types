@@ -37,12 +37,23 @@
     "dist"
   ],
   "exports": {
-    ".": "./dist/index.d.mts",
+    ".": {
+      "pkg-types": "./src/index.ts",
+      "default": "./dist/index.d.mts"
+    },
     "./package.json": "./package.json"
+  },
+  "imports": {
+    "#build/*": "./build/*.ts",
+    "#lib/*": {
+      "pkg-types": "./src/*.ts",
+      "default": "./dist/*.d.mts"
+    },
+    "#tests/*": "./__tests__/*.ts"
   },
   "types": "./dist/index.d.mts",
   "scripts": {
-    "build": "mkbuild",
+    "build": "yarn clean:build; node --conditions development --conditions pkg-types --experimental-strip-types --experimental-transform-types ./build/build.ts",
     "check:ci": "yarn dedupe --check && yarn check:format && yarn check:lint && yarn check:spelling && yarn typecheck && yarn pack && yarn check:types:build && attw package.tgz && yarn clean:pack",
     "check:format": "dprint check --incremental=false",
     "check:lint": "eslint --exit-on-fatal-error --max-warnings 0 .",
@@ -51,9 +62,9 @@
     "check:types:attw": "yarn pack && attw package.tgz && yarn clean:pack",
     "check:types:build": "tsc -p tsconfig.build.json",
     "check:upgrades": "yarn upgrade-interactive",
-    "clean:build": "trash ./{dist,*.tgz}",
+    "clean:build": "trash \"./{dist,*.tgz}\"",
     "clean:modules": "trash ./.yarn/{cache,*.gz} ./node_modules",
-    "clean:pack": "trash ./*.tgz",
+    "clean:pack": "trash \"./*.tgz\"",
     "clean:test": "trash ./__tests__/report.json",
     "commitlint": "commitlint -V",
     "fix:cg": "yarn fix:format && yarn fix:lint",
@@ -67,8 +78,8 @@
     "prepublishOnly": "toggle-scripts -prepack",
     "release": "bash ./scripts/release.sh",
     "remark": "remark .",
-    "test": "vitest run",
-    "typecheck": "vitest run --typecheck --mode=typecheck",
+    "test": "vitest run --typecheck --mode=typecheck",
+    "typecheck": "yarn test",
     "typecheck:watch": "vitest --typecheck --mode=typecheck"
   },
   "devDependencies": {
@@ -77,9 +88,13 @@
     "@commitlint/types": "19.0.3",
     "@eslint/js": "9.9.1",
     "@flex-development/commitlint-config": "1.0.1",
+    "@flex-development/errnode": "3.1.1",
+    "@flex-development/ext-regex": "2.0.0",
     "@flex-development/grease": "3.0.0-alpha.9",
     "@flex-development/mkbuild": "1.0.0-alpha.23",
-    "@flex-development/pathe": "2.0.0",
+    "@flex-development/mlly": "1.0.0-alpha.18",
+    "@flex-development/pathe": "3.0.0",
+    "@flex-development/tsconfig-utils": "2.0.2",
     "@flex-development/tutils": "6.0.0-alpha.25",
     "@stylistic/eslint-plugin": "2.7.1",
     "@types/eslint": "9.6.1",
@@ -90,11 +105,13 @@
     "@typescript-eslint/eslint-plugin": "8.3.0",
     "@typescript-eslint/parser": "8.3.0",
     "@vates/toggle-scripts": "1.0.0",
+    "consola": "3.2.3",
     "cross-env": "7.0.3",
     "cspell": "8.14.2",
+    "devlop": "1.1.0",
     "dprint": "0.47.2",
     "editorconfig": "2.0.0",
-    "esbuild": "0.23.1",
+    "esbuild": "0.24.0",
     "eslint": "9.9.1",
     "eslint-import-resolver-typescript": "3.6.3",
     "eslint-mdx": "3.1.5",
@@ -116,6 +133,7 @@
     "lint-staged": "15.2.9",
     "node-notifier": "10.0.1",
     "prettier": "3.3.3",
+    "pretty-bytes": "6.1.1",
     "remark": "15.0.1",
     "remark-cli": "12.0.1",
     "remark-directive": "3.0.0",
@@ -187,13 +205,13 @@
     "remark-lint-unordered-list-marker-style": "4.0.0",
     "remark-validate-links": "13.0.1",
     "sh-syntax": "0.4.2",
+    "tinyrainbow": "1.2.0",
     "trash-cli": "6.0.0",
     "ts-dedent": "2.2.0",
     "typescript": "5.5.4",
     "typescript-eslint": "8.3.0",
     "unified": "11.0.5",
     "vfile": "6.0.3",
-    "vite-tsconfig-paths": "5.0.1",
     "vitest": "2.0.5",
     "yaml-eslint-parser": "1.2.3"
   },

@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/BrowserObject
  */
 
-import type TestSubject from '../browser-object'
+import type TestSubject from '#lib/browser-object'
 
 describe('unit-d:BrowserObject', () => {
   it('should match Record<string, string | false>', () => {

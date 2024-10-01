@@ -166,8 +166,6 @@ jobs:
           grease changelog -sw
       - id: build
         name: Build project
-        env:
-          NODE_NO_WARNINGS: 1
         run: yarn build
       - id: commit
         name: Commit and push release preparation

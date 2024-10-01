@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/PackageManager
  */
 
-import type TestSubject from '../package-manager'
-import type PackageManagerMap from '../package-manager-map'
+import type TestSubject from '#lib/package-manager'
+import type { PackageManagerMap } from '@flex-development/pkg-types'
 
 describe('unit-d:PackageManager', () => {
   it('should equal PackageManagerMap[keyof PackageManagerMap]', () => {

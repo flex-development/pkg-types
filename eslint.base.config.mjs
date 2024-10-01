@@ -8,7 +8,7 @@ import eslint from '@eslint/js'
 import globals from 'globals'
 import fs from 'node:fs'
 import ts from 'typescript-eslint'
-import pkg from './package.json' assert { type: 'json' }
+import pkg from './package.json' with { type: 'json' }
 
 /**
  * Load a plugin.
@@ -67,6 +67,11 @@ export default [
           object: 'object'
         },
         structuredTags: {
+          category: {
+            name: 'namepath-referencing',
+            required: ['name'],
+            type: false
+          },
           const: {
             name: 'namepath-defining',
             required: ['name']
@@ -79,7 +84,8 @@ export default [
             required: ['name', 'type']
           },
           experimental: {
-            name: 'none'
+            name: false,
+            type: false
           },
           extends: {
             name: 'namepath-defining',
@@ -334,6 +340,7 @@ export default [
       '@typescript-eslint/no-use-before-define': [
         2,
         {
+          allowNamedExports: true,
           classes: true,
           enums: true,
           functions: false,
@@ -972,19 +979,7 @@ export default [
         }
       ],
       '@typescript-eslint/return-await': [2, 'in-try-catch'],
-      '@typescript-eslint/strict-boolean-expressions': [
-        2,
-        {
-          allowAny: false,
-          allowNullableBoolean: true,
-          allowNullableNumber: true,
-          allowNullableObject: true,
-          allowNullableString: true,
-          allowNumber: true,
-          allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false,
-          allowString: true
-        }
-      ],
+      '@typescript-eslint/strict-boolean-expressions': 0,
       '@typescript-eslint/switch-exhaustiveness-check': 2,
       '@typescript-eslint/unbound-method': [2, { ignoreStatic: true }],
       '@typescript-eslint/use-unknown-in-catch-callback-variable': 2,
@@ -1025,7 +1020,8 @@ export default [
     files: [
       '**/__mocks__/**/*.+(ts|tsx)',
       '**/__tests__/*.spec.+(ts|tsx)',
-      '**/__tests__/*.spec-d.ts'
+      '**/__tests__/*.spec-d.ts',
+      '__tests__/setup/*.ts'
     ],
     languageOptions: {
       globals: {

@@ -3,9 +3,9 @@
  * @module pkg-types/tests/unit-d/Scripts
  */
 
+import type TestSubject from '#lib/scripts'
+import type { JsonObject } from '@flex-development/pkg-types'
 import type { Optional } from '@flex-development/tutils'
-import type JsonObject from '../json-object'
-import type TestSubject from '../scripts'
 
 describe('unit-d:Scripts', () => {
   it('should allow empty object', () => {

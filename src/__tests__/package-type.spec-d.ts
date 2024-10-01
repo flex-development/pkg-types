@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/PackageType
  */
 
-import type TestSubject from '../package-type'
+import type TestSubject from '#lib/package-type'
 
 describe('unit-d:PackageType', () => {
   it('should extract "commonjs"', () => {

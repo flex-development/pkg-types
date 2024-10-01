@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/DevDependencies
  */
 
-import type TestSubject from '../dev-dependencies'
+import type TestSubject from '#lib/dev-dependencies'
 
 describe('unit-d:DevDependencies', () => {
   it('should match Record<string, string>', () => {

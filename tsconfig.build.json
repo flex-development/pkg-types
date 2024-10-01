@@ -3,9 +3,7 @@
     "customConditions": [],
     "declaration": true,
     "noEmitOnError": true,
-    "paths": {
-      "#src/*": ["src/*"]
-    },
+    "paths": {},
     "skipLibCheck": false,
     "target": "es2023"
   },

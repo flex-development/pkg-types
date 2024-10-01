@@ -3,10 +3,12 @@
  * @module pkg-types/tests/unit-d/Imports
  */
 
-import type TestSubject from '../imports'
-import type ImportsSubpath from '../imports-subpath'
-import type JsonObject from '../json-object'
-import type Target from '../target'
+import type TestSubject from '#lib/imports'
+import type {
+  ImportsSubpath,
+  JsonObject,
+  Target
+} from '@flex-development/pkg-types'
 
 describe('unit-d:Imports', () => {
   it('should allow empty object', () => {

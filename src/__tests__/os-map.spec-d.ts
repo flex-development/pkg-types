@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/OSMap
  */
 
-import type TestSubject from '../os-map'
+import type TestSubject from '#lib/os-map'
 
 describe('unit-d:OSMap', () => {
   it('should match [aix: "aix"]', () => {

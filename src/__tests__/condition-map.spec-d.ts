@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/ConditionMap
  */
 
-import type TestSubject from '../condition-map'
+import type TestSubject from '#lib/condition-map'
 
 describe('unit-d:ConditionMap', () => {
   it('should match [browser: "browser"]', () => {

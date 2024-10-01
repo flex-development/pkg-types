@@ -3,34 +3,36 @@
  * @module pkg-types/PackageJson
  */
 
-import type Bin from './bin'
-import type Browser from './browser'
-import type Bugs from './bugs'
-import type Config from './config'
-import type CPU from './cpu'
-import type Dependencies from './dependencies'
-import type DevDependencies from './dev-dependencies'
-import type Directories from './directories'
-import type Engines from './engines'
-import type Exports from './exports'
-import type Imports from './imports'
-import type JsonObject from './json-object'
-import type JsonValue from './json-value'
-import type LicenseInfo from './license-info'
-import type OptionalDependencies from './optional-dependencies'
-import type OS from './os'
-import type PackageManager from './package-manager'
-import type PackageType from './package-type'
-import type PeerDependencies from './peer-dependencies'
-import type PeerDependenciesMeta from './peer-dependencies-meta'
-import type People from './people'
-import type Person from './person'
-import type PublishConfig from './publish-config'
-import type RepositoryInfo from './repository-info'
-import type Scripts from './scripts'
-import type SemanticVersion from './semantic-version'
-import type TypesVersions from './types-versions'
-import type WorkspacesConfig from './workspaces-config'
+import type {
+  Bin,
+  Browser,
+  Bugs,
+  Config,
+  CPU,
+  Dependencies,
+  DevDependencies,
+  Directories,
+  Engines,
+  Exports,
+  Imports,
+  JsonObject,
+  JsonValue,
+  LicenseInfo,
+  OptionalDependencies,
+  OS,
+  PackageManager,
+  PackageType,
+  PeerDependencies,
+  PeerDependenciesMeta,
+  People,
+  Person,
+  PublishConfig,
+  RepositoryInfo,
+  Scripts,
+  SemanticVersion,
+  TypesVersions,
+  WorkspacesConfig
+} from '@flex-development/pkg-types'
 
 /**
  * Package manifest.

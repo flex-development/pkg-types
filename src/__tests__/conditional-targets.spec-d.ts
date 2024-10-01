@@ -3,10 +3,8 @@
  * @module pkg-types/tests/unit-d/ConditionalTargets
  */
 
-import type Condition from '../condition'
-import type TestSubject from '../conditional-targets'
-import type JsonObject from '../json-object'
-import type Target from '../target'
+import type TestSubject from '#lib/conditional-targets'
+import type { Condition, JsonObject, Target } from '@flex-development/pkg-types'
 
 describe('unit-d:ConditionalTargets', () => {
   it('should allow empty object', () => {

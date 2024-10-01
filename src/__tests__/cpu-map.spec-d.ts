@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/CPUMap
  */
 
-import type TestSubject from '../cpu-map'
+import type TestSubject from '#lib/cpu-map'
 
 describe('unit-d:CPUMap', () => {
   it('should match [arm: "arm"]', () => {

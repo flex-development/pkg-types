@@ -3,9 +3,9 @@
  * @module pkg-types/tests/unit-d/PeerDependencyMetadata
  */
 
+import type TestSubject from '#lib/peer-dependency-metadata'
+import type { JsonObject } from '@flex-development/pkg-types'
 import type { Nilable } from '@flex-development/tutils'
-import type JsonObject from '../json-object'
-import type TestSubject from '../peer-dependency-metadata'
 
 describe('unit-d:PeerDependencyMetadata', () => {
   it('should allow empty object', () => {

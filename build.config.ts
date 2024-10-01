@@ -12,7 +12,6 @@ import { defineBuildConfig, type Config } from '@flex-development/mkbuild'
  * @const {Config} config
  */
 const config: Config = defineBuildConfig({
-  charset: 'utf8',
   dts: 'only',
   tsconfig: 'tsconfig.build.json'
 })

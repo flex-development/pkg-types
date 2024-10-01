@@ -3,8 +3,7 @@
  * @module pkg-types/Exports
  */
 
-import type SubpathExports from './subpath-exports'
-import type Target from './target'
+import type { SubpathExports, Target } from '@flex-development/pkg-types'
 
 /**
  * Package exports.

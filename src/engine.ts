@@ -3,7 +3,7 @@
  * @module pkg-types/Engine
  */
 
-import type EngineMap from './engine-map'
+import type { EngineMap } from '@flex-development/pkg-types'
 
 /**
  * Union of registered package engines.

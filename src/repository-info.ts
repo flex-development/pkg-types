@@ -3,8 +3,7 @@
  * @module pkg-types/RepositoryInfo
  */
 
-import type JsonObject from './json-object'
-import type RepositoryType from './repository-type'
+import type { JsonObject, RepositoryType } from '@flex-development/pkg-types'
 
 /**
  * Source code location.

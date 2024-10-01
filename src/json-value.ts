@@ -3,9 +3,11 @@
  * @module pkg-types/JsonValue
  */
 
-import type JsonArray from './json-array'
-import type JsonObject from './json-object'
-import type JsonPrimitive from './json-primitive'
+import type {
+  JsonArray,
+  JsonObject,
+  JsonPrimitive
+} from '@flex-development/pkg-types'
 
 /**
  * [JSON][] data types.

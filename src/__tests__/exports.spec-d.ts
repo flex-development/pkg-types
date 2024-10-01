@@ -3,9 +3,8 @@
  * @module pkg-types/tests/unit-d/Exports
  */
 
-import type TestSubject from '../exports'
-import type ExportsObject from '../exports-object'
-import type TargetList from '../target-list'
+import type TestSubject from '#lib/exports'
+import type { ExportsObject, TargetList } from '@flex-development/pkg-types'
 
 describe('unit-d:Exports', () => {
   it('should extract ExportsObject', () => {

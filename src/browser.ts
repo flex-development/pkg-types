@@ -3,7 +3,7 @@
  * @module pkg-types/Browser
  */
 
-import type BrowserObject from './browser-object'
+import type { BrowserObject } from '@flex-development/pkg-types'
 
 /**
  * Hint to JavaScript bundlers or component tools when packaging modules for

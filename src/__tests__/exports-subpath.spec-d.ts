@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/ExportsSubpath
  */
 
-import type TestSubject from '../exports-subpath'
+import type TestSubject from '#lib/exports-subpath'
 
 describe('unit-d:ExportsSubpath', () => {
   it('should extract "."', () => {

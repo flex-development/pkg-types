@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/JsonObject
  */
 
-import type TestSubject from '../json-object'
-import type JsonValue from '../json-value'
+import type TestSubject from '#lib/json-object'
+import type { JsonValue } from '@flex-development/pkg-types'
 
 describe('unit-d:JsonObject', () => {
   it('should match Record<string, JsonValue>', () => {

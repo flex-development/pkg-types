@@ -3,8 +3,7 @@
  * @module pkg-types/ConditionalTargets
  */
 
-import type Condition from './condition'
-import type Target from './target'
+import type { Condition, Target } from '@flex-development/pkg-types'
 
 /**
  * Conditional package targets map.

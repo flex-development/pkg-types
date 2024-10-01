@@ -3,9 +3,8 @@
  * @module pkg-types/tests/unit-d/Engines
  */
 
-import type Engine from '../engine'
-import type TestSubject from '../engines'
-import type JsonObject from '../json-object'
+import type TestSubject from '#lib/engines'
+import type { Engine, JsonObject } from '@flex-development/pkg-types'
 
 describe('unit-d:Engines', () => {
   it('should allow empty object', () => {

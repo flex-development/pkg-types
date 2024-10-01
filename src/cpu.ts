@@ -3,7 +3,7 @@
  * @module pkg-types/CPU
  */
 
-import type CPUMap from './cpu-map'
+import type { CPUMap } from '@flex-development/pkg-types'
 
 /**
  * Union of registered CPU architectures.

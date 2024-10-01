@@ -3,7 +3,7 @@
  * @module pkg-types/Bugs
  */
 
-import type JsonObject from './json-object'
+import type { JsonObject } from '@flex-development/pkg-types'
 
 /**
  * Issue tracker info.

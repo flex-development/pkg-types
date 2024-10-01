@@ -3,7 +3,7 @@
  * @module pkg-types/PackageManager
  */
 
-import type PackageManagerMap from './package-manager-map'
+import type { PackageManagerMap } from '@flex-development/pkg-types'
 
 /**
  * Union of registered package managers.

@@ -3,9 +3,11 @@
  * @module pkg-types/tests/unit-d/Target
  */
 
-import type ConditionalTargets from '../conditional-targets'
-import type TestSubject from '../target'
-import type TargetList from '../target-list'
+import type TestSubject from '#lib/target'
+import type {
+  ConditionalTargets,
+  TargetList
+} from '@flex-development/pkg-types'
 
 describe('unit-d:Target', () => {
   it('should extract ConditionalTargets', () => {

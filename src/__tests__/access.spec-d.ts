@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/Access
  */
 
-import type TestSubject from '../access'
+import type TestSubject from '#lib/access'
 
 describe('unit-d:Access', () => {
   it('should extract "public"', () => {

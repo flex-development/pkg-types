@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/OptionalDependencies
  */
 
-import type TestSubject from '../optional-dependencies'
+import type TestSubject from '#lib/optional-dependencies'
 
 describe('unit-d:OptionalDependencies', () => {
   it('should allow empty object', () => {

@@ -3,7 +3,7 @@
  * @module pkg-types/OS
  */
 
-import type OSMap from './os-map'
+import type { OSMap } from '@flex-development/pkg-types'
 
 /**
  * Union of registered operating system platforms.

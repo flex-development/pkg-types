@@ -3,9 +3,11 @@
  * @module pkg-types/tests/unit-d/PeerDependenciesMeta
  */
 
-import type JsonObject from '../json-object'
-import type TestSubject from '../peer-dependencies-meta'
-import type PeerDependencyMetadata from '../peer-dependency-metadata'
+import type TestSubject from '#lib/peer-dependencies-meta'
+import type {
+  JsonObject,
+  PeerDependencyMetadata
+} from '@flex-development/pkg-types'
 
 describe('unit-d:PeerDependenciesMeta', () => {
   it('should match JsonObject', () => {

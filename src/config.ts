@@ -3,7 +3,7 @@
  * @module pkg-types/Config
  */
 
-import type JsonObject from './json-object'
+import type { JsonObject } from '@flex-development/pkg-types'
 
 /**
  * Configuration parameters used in package scripts.

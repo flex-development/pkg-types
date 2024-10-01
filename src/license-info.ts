@@ -3,7 +3,7 @@
  * @module pkg-types/LicenseInfo
  */
 
-import type JsonObject from './json-object'
+import type { JsonObject } from '@flex-development/pkg-types'
 
 /**
  * Package license info.

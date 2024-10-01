@@ -6,7 +6,7 @@
     "alwaysStrict": false,
     "baseUrl": ".",
     "checkJs": false,
-    "customConditions": ["development", "import", "node"],
+    "customConditions": ["pkg-types"],
     "declaration": false,
     "declarationMap": false,
     "emitDecoratorMetadata": false,
@@ -28,9 +28,7 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "outDir": "dist",
-    "paths": {
-      "#src/*": ["src/*"]
-    },
+    "paths": {},
     "preserveConstEnums": true,
     "preserveSymlinks": false,
     "pretty": true,

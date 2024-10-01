@@ -3,9 +3,11 @@
  * @module pkg-types/tests/unit-d/ExportsObject
  */
 
-import type ConditionalTargets from '../conditional-targets'
-import type TestSubject from '../exports-object'
-import type SubpathExports from '../subpath-exports'
+import type TestSubject from '#lib/exports-object'
+import type {
+  ConditionalTargets,
+  SubpathExports
+} from '@flex-development/pkg-types'
 
 describe('unit-d:ExportsObject', () => {
   it('should extract ConditionalTargets', () => {

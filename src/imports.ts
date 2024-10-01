@@ -3,8 +3,7 @@
  * @module pkg-types/Imports
  */
 
-import type ImportsSubpath from './imports-subpath'
-import type Target from './target'
+import type { ImportsSubpath, Target } from '@flex-development/pkg-types'
 
 /**
  * Mappings that only apply to import specifiers from within a package.

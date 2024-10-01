@@ -3,7 +3,7 @@
  * @module pkg-types/JsonArray
  */
 
-import type JsonValue from './json-value'
+import type { JsonValue } from '@flex-development/pkg-types'
 
 /**
  * An array containing [JSON values][json-data-types].

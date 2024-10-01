@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/BinObject
  */
 
-import type TestSubject from '../bin-object'
+import type TestSubject from '#lib/bin-object'
 
 describe('unit-d:BinObject', () => {
   it('should allow empty object', () => {

@@ -73,6 +73,8 @@ jobs:
         run: yarn build
       - id: typecheck
         name: Run typecheck
+        env:
+          NODE_OPTIONS: --experimental-strip-types --experimental-transform-types
         run: yarn typecheck
       - id: typecheck-build
         name: Run typecheck-build

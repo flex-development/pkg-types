@@ -107,6 +107,7 @@ Follow the steps below to setup your local development environment:
 | `GITHUB_TOKEN`      |
 | `HOMEBREW_BREWFILE` |
 | `NODE_NO_WARNINGS`  |
+| `NODE_OPTIONS`      |
 | `ZSH_DOTENV_FILE`   |
 
 #### GitHub Actions

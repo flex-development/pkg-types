@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/JsonPrimitive
  */
 
-import type TestSubject from '../json-primitive'
+import type TestSubject from '#lib/json-primitive'
 
 describe('unit-d:JsonPrimitive', () => {
   it('should extract boolean', () => {

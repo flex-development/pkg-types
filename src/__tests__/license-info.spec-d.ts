@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/LicenseInfo
  */
 
+import type TestSubject from '#lib/license-info'
 import type { JsonObject, Nilable } from '@flex-development/tutils'
-import type TestSubject from '../license-info'
 
 describe('unit-d:LicenseInfo', () => {
   it('should allow empty object', () => {

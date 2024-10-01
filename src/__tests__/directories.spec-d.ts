@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/Directories
  */
 
+import type TestSubject from '#lib/directories'
 import type { Nilable } from '@flex-development/tutils'
-import type TestSubject from '../directories'
 
 describe('unit-d:Directories', () => {
   it('should allow empty object', () => {

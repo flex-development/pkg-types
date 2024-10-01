@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/RepositoryTypeMap
  */
 
-import type TestSubject from '../repository-type-map'
+import type TestSubject from '#lib/repository-type-map'
 
 describe('unit-d:RepositoryTypeMap', () => {
   it('should match [git: "git"]', () => {

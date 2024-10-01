@@ -3,11 +3,13 @@
  * @module pkg-types/tests/unit-d/SubpathExports
  */
 
+import type TestSubject from '#lib/subpath-exports'
+import type {
+  ExportsSubpath,
+  JsonObject,
+  Target
+} from '@flex-development/pkg-types'
 import type { Optional } from '@flex-development/tutils'
-import type ExportsSubpath from '../exports-subpath'
-import type JsonObject from '../json-object'
-import type TestSubject from '../subpath-exports'
-import type Target from '../target'
 
 describe('unit-d:SubpathExports', () => {
   it('should allow empty object', () => {

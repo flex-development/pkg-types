@@ -3,8 +3,10 @@
  * @module pkg-types/Target
  */
 
-import type ConditionalTargets from './conditional-targets'
-import type TargetList from './target-list'
+import type {
+  ConditionalTargets,
+  TargetList
+} from '@flex-development/pkg-types'
 
 /**
  * Union of package export and import targets.

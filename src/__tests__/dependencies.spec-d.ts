@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/Dependencies
  */
 
-import type TestSubject from '../dependencies'
+import type TestSubject from '#lib/dependencies'
 
 describe('unit-d:Dependencies', () => {
   it('should allow empty object', () => {

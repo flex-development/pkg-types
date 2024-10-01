@@ -3,7 +3,7 @@
  * @module pkg-types/Engines
  */
 
-import type Engine from './engine'
+import type { Engine } from '@flex-development/pkg-types'
 
 /**
  * Engines a package runs on.

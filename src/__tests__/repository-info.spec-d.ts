@@ -3,10 +3,9 @@
  * @module pkg-types/tests/unit-d/RepositoryInfo
  */
 
+import type TestSubject from '#lib/repository-info'
+import type { JsonObject, RepositoryType } from '@flex-development/pkg-types'
 import type { Nilable } from '@flex-development/tutils'
-import type JsonObject from '../json-object'
-import type TestSubject from '../repository-info'
-import type RepositoryType from '../repository-type'
 
 describe('unit-d:RepositoryInfo', () => {
   it('should extend JsonObject', () => {

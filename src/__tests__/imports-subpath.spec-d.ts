@@ -3,7 +3,7 @@
  * @module pkg-types/tests/unit-d/ImportsSubpath
  */
 
-import type TestSubject from '../imports-subpath'
+import type TestSubject from '#lib/imports-subpath'
 
 describe('unit-d:ImportsSubpath', () => {
   it('should equal `#${string}`', () => {

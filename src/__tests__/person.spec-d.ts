@@ -3,9 +3,9 @@
  * @module pkg-types/tests/unit-d/Person
  */
 
+import type TestSubject from '#lib/person'
+import type { JsonObject } from '@flex-development/pkg-types'
 import type { Nilable } from '@flex-development/tutils'
-import type JsonObject from '../json-object'
-import type TestSubject from '../person'
 
 describe('unit-d:Person', () => {
   it('should extend JsonObject', () => {

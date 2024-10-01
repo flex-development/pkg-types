@@ -286,6 +286,8 @@ jobs:
       - id: typecheck
         if: steps.test-files-check.outputs.files_exists == 'true'
         name: Run typecheck
+        env:
+          NODE_OPTIONS: --experimental-strip-types --experimental-transform-types
         run: yarn typecheck
   build:
     needs:

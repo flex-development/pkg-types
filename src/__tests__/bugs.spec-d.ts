@@ -3,9 +3,9 @@
  * @module pkg-types/tests/unit-d/Bugs
  */
 
+import type TestSubject from '#lib/bugs'
+import type { JsonObject } from '@flex-development/pkg-types'
 import type { Nilable } from '@flex-development/tutils'
-import type TestSubject from '../bugs'
-import type JsonObject from '../json-object'
 
 describe('unit-d:Bugs', () => {
   it('should allow empty object', () => {

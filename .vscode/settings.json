@@ -108,6 +108,7 @@
   "emmet.triggerExpansionOnTab": true,
   "eslint.enable": true,
   "eslint.lintTask.enable": true,
+  "eslint.nodePath": "node_modules",
   "eslint.options": {},
   "eslint.runtime": "node",
   "eslint.trace.server": "messages",

@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/JsonArray
  */
 
-import type TestSubject from '../json-array'
-import type JsonValue from '../json-value'
+import type TestSubject from '#lib/json-array'
+import type { JsonValue } from '@flex-development/pkg-types'
 
 describe('unit-d:JsonArray', () => {
   it('should allow readonly list', () => {

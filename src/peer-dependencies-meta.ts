@@ -3,7 +3,7 @@
  * @module pkg-types/PeerDependenciesMeta
  */
 
-import type PeerDependencyMetadata from './peer-dependency-metadata'
+import type { PeerDependencyMetadata } from '@flex-development/pkg-types'
 
 /**
  * Map, where each key is a peer dependency, and each value is metadata for the

@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/TypesVersions
  */
 
-import type JsonObject from '../json-object'
-import type TestSubject from '../types-versions'
+import type TestSubject from '#lib/types-versions'
+import type { JsonObject } from '@flex-development/pkg-types'
 
 describe('unit-d:TypesVersions', () => {
   it('should allow empty object', () => {

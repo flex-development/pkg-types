@@ -3,10 +3,12 @@
  * @module pkg-types/PublishConfig
  */
 
-import type Access from './access'
-import type Bin from './bin'
-import type Browser from './browser'
-import type JsonObject from './json-object'
+import type {
+  Access,
+  Bin,
+  Browser,
+  JsonObject
+} from '@flex-development/pkg-types'
 
 /**
  * Configuration values to use when a package is published.

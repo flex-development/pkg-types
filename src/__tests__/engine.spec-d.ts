@@ -3,8 +3,8 @@
  * @module pkg-types/tests/unit-d/Engine
  */
 
-import type TestSubject from '../engine'
-import type EngineMap from '../engine-map'
+import type TestSubject from '#lib/engine'
+import type { EngineMap } from '@flex-development/pkg-types'
 
 describe('unit-d:Engine', () => {
   it('should equal EngineMap[keyof EngineMap]', () => {

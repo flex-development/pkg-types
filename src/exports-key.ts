@@ -3,8 +3,7 @@
  * @module pkg-types/ExportsKey
  */
 
-import type Condition from './condition'
-import type ExportsSubpath from './exports-subpath'
+import type { Condition, ExportsSubpath } from '@flex-development/pkg-types'
 
 /**
  * An `exports` object key.

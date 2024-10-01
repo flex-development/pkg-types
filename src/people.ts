@@ -3,7 +3,7 @@
  * @module pkg-types/People
  */
 
-import type Person from './person'
+import type { Person } from '@flex-development/pkg-types'
 
 /**
  * List of those who have been involved in creating or maintaining a package.
