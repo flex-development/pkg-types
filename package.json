@@ -83,7 +83,7 @@
     "typecheck": "yarn test"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "0.15.4",
+    "@arethetypeswrong/cli": "0.16.4",
     "@commitlint/cli": "19.5.0",
     "@commitlint/types": "19.5.0",
     "@eslint/js": "9.11.1",
