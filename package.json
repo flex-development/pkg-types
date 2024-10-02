@@ -78,9 +78,9 @@
     "prepublishOnly": "toggle-scripts -prepack",
     "release": "bash ./scripts/release.sh",
     "remark": "remark .",
-    "test": "vitest run --typecheck --mode=typecheck",
-    "typecheck": "yarn test",
-    "typecheck:watch": "vitest --typecheck --mode=typecheck"
+    "test": "yarn test:run --typecheck --mode=typecheck",
+    "test:run": "cross-env NODE_OPTIONS=\"--conditions pkg-types --experimental-strip-types --experimental-transform-types\" vitest run",
+    "typecheck": "yarn test"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.15.4",
