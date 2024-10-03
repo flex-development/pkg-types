@@ -1,3 +1,49 @@
+## [4.1.0](https://github.com/flex-development/pkg-types/compare/4.0.0...4.1.0) (2024-10-02)
+
+### ⚠ BREAKING CHANGES
+
+- package exports/imports
+
+### :package: Build
+
+- [[`1a9bf9c`](https://github.com/flex-development/pkg-types/commit/1a9bf9c44ab2974c6ed7537b38c62f6700709cc2)] refactor package exports/imports
+- [[`50cea16`](https://github.com/flex-development/pkg-types/commit/50cea161618e9356a1a749ba0b6d4463ba706f59)] **deps-dev:** Bump @arethetypeswrong/cli from 0.15.4 to 0.16.4 ([#347](https://github.com/flex-development/pkg-types/issues/347))
+- [[`c2cd414`](https://github.com/flex-development/pkg-types/commit/c2cd414c8a325b81fcf8631febc778e68a84c578)] **deps-dev:** Bump @stylistic/eslint-plugin from 2.7.1 to 2.8.0 ([#330](https://github.com/flex-development/pkg-types/issues/330))
+- [[`acf85b7`](https://github.com/flex-development/pkg-types/commit/acf85b7308938b01b2e51952c905fb00032910ac)] **deps-dev:** Bump cspell from 8.14.2 to 8.14.4 ([#344](https://github.com/flex-development/pkg-types/issues/344))
+- [[`cfe0f00`](https://github.com/flex-development/pkg-types/commit/cfe0f006cf5c598a0652fffd86dbe7489d680577)] **deps-dev:** Bump eslint-plugin-import from 2.29.1 to 2.30.0 ([#326](https://github.com/flex-development/pkg-types/issues/326))
+- [[`8c401df`](https://github.com/flex-development/pkg-types/commit/8c401dfdcf3ad3199c31f49c96b172f5dffb49cc)] **deps-dev:** Bump eslint-plugin-jsdoc from 50.2.2 to 50.3.1 ([#346](https://github.com/flex-development/pkg-types/issues/346))
+- [[`5faaabb`](https://github.com/flex-development/pkg-types/commit/5faaabb7772eba4e772cb0d7f121715421ae81f1)] **deps-dev:** Bump husky from 9.1.5 to 9.1.6 ([#345](https://github.com/flex-development/pkg-types/issues/345))
+- [[`f130a82`](https://github.com/flex-development/pkg-types/commit/f130a823d35740b8976ec655c3d03320a4e925a8)] **deps-dev:** Bump lint-staged from 15.2.9 to 15.2.10 ([#324](https://github.com/flex-development/pkg-types/issues/324))
+- [[`97398c6`](https://github.com/flex-development/pkg-types/commit/97398c685bb178b31f278276d8876d26744a5ff2)] **deps-dev:** Bump the commitlint group with 2 updates ([#342](https://github.com/flex-development/pkg-types/issues/342))
+- [[`b4f44b0`](https://github.com/flex-development/pkg-types/commit/b4f44b014adbabb7f37c5c52829b9958daf990a7)] **deps-dev:** Bump the eslint group across 1 directory with 2 updates ([#335](https://github.com/flex-development/pkg-types/issues/335))
+- [[`6f3eca9`](https://github.com/flex-development/pkg-types/commit/6f3eca985fdc96568b585c471c7453a07e71b87d)] **deps-dev:** Bump the typescript-eslint group across 1 directory with 3 updates ([#339](https://github.com/flex-development/pkg-types/issues/339))
+- [[`85c4358`](https://github.com/flex-development/pkg-types/commit/85c43585e62db07b7ab20c1e6be691cfc9fd58d4)] **deps-dev:** bump typescript from 5.5.4 to 5.6.2
+- [[`6d314ad`](https://github.com/flex-development/pkg-types/commit/6d314ad86610ca4469e3dac573bdb507549866d2)] **deps-dev:** Bump vitest from 2.0.5 to 2.1.1 in the vitest group ([#343](https://github.com/flex-development/pkg-types/issues/343))
+- [[`8b78933`](https://github.com/flex-development/pkg-types/commit/8b78933a5514da16b666dd84f6ed9a3bb07212f2)] **deps:** Bump rollup from 4.21.1 to 4.23.0 ([#341](https://github.com/flex-development/pkg-types/issues/341))
+- [[`ee1368f`](https://github.com/flex-development/pkg-types/commit/ee1368f503c76e4c9cad101069756df319a5ff7a)] **deps:** Bump vite from 5.4.2 to 5.4.8 ([#340](https://github.com/flex-development/pkg-types/issues/340))
+- [[`da19e77`](https://github.com/flex-development/pkg-types/commit/da19e775ae6da030297951b2415a5a5271aff747)] **yarn:** bump yarn from 4.4.0 to 4.5.0
+
+### :robot: Continuous Integration
+
+- [[`b2fb71c`](https://github.com/flex-development/pkg-types/commit/b2fb71c272f2659dc5830cc58239adb31dc6cb6c)] **deps:** Bump actions/add-to-project from 0.6.1 to 1.0.2 ([#320](https://github.com/flex-development/pkg-types/issues/320))
+- [[`4dea37b`](https://github.com/flex-development/pkg-types/commit/4dea37b302d1913c405b138387afa6320a626e54)] **deps:** Bump actions/checkout from 4.1.2 to 4.2.0 ([#338](https://github.com/flex-development/pkg-types/issues/338))
+- [[`c3d8700`](https://github.com/flex-development/pkg-types/commit/c3d870023f8ee262522c8a7c095c41a5462c3b3f)] **deps:** Bump actions/create-github-app-token from 1.9.0 to 1.11.0 ([#331](https://github.com/flex-development/pkg-types/issues/331))
+- [[`1b84aeb`](https://github.com/flex-development/pkg-types/commit/1b84aebeb55505bc556590fea14225adca073da2)] **deps:** Bump actions/upload-artifact from 4.3.6 to 4.4.0 ([#319](https://github.com/flex-development/pkg-types/issues/319))
+- [[`910c04c`](https://github.com/flex-development/pkg-types/commit/910c04c2c00b65ff82445636a04169227982d98d)] **deps:** Bump octokit/graphql-action from 2.2.25 to 2.3.2 ([#321](https://github.com/flex-development/pkg-types/issues/321))
+
+### :sparkles: Features
+
+- [[`0c70854`](https://github.com/flex-development/pkg-types/commit/0c708541334629ed71abbd7f36ec63adc7d1269c)] [`ConditionMap`] add "ts-node"
+- [[`b54dbbb`](https://github.com/flex-development/pkg-types/commit/b54dbbb5518068757bd5cfe43d9ef8be33dff66a)] `ExportsSubpath`
+
+### :bug: Fixes
+
+- [[`871f2a7`](https://github.com/flex-development/pkg-types/commit/871f2a76442c446a48d9626ec610459107576817)] package exports/imports
+
+### :house_with_garden: Housekeeping
+
+- [[`29971c1`](https://github.com/flex-development/pkg-types/commit/29971c1f1a94aeb973085fc879d2b79b921f5929)] use `cross-env` to set node options
+
 ## [4.0.0](https://github.com/flex-development/pkg-types/compare/3.0.0...4.0.0) (2024-08-30)
 
 ### ⚠ BREAKING CHANGES
@@ -331,5 +377,6 @@
 - [[`ab8a328`](https://github.com/flex-development/pkg-types/commit/ab8a32849011d78806f85760537b4aae063b2942)] **interfaces:** `FundingObject` -> `FundingInfo`
 - [[`63abb4a`](https://github.com/flex-development/pkg-types/commit/63abb4aea401a1a8e24e2de51ba47104f188a266)] **ts:** ensure definitions are json-compatible
 - [[`cc05dfb`](https://github.com/flex-development/pkg-types/commit/cc05dfb3a65b6230b30b3b436e27e0b44efa3008)] **types:** `BugsObject` -> `Bugs`
+
 
 
